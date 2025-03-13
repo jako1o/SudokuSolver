@@ -1,4 +1,4 @@
-using System;
+ï»¿using System;
 using System.Windows.Forms;
 
 namespace SudokuSolver
@@ -53,7 +53,7 @@ namespace SudokuSolver
 
             Button solveButton = new Button
             {
-                Text = "Lösen",
+                Text = "LÃ¶sen",
                 Left = 10,
                 Top = 330,
                 Width = 100
@@ -95,21 +95,21 @@ namespace SudokuSolver
             }
         }
 
-        // Event-Handler für CellContentClick
+        // Event-Handler fÃ¼r CellContentClick
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            // Prüfen, ob der Klick innerhalb der gültigen Zellen war (nicht Kopfzeilen oder äußere Zellen)
+            // PrÃ¼fen, ob der Klick innerhalb der gÃ¼ltigen Zellen war (nicht Kopfzeilen oder Ã¤uÃŸere Zellen)
             if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
             {
-                // Hier kannst du beliebige Logik hinzufügen, um den Klick zu verarbeiten
-                // Zum Beispiel: den Wert der angeklickten Zelle ändern oder etwas anderes tun
+                // Hier kannst du beliebige Logik hinzufÃ¼gen, um den Klick zu verarbeiten
+                // Zum Beispiel: den Wert der angeklickten Zelle Ã¤ndern oder etwas anderes tun
                 MessageBox.Show($"Zelle ({e.RowIndex + 1}, {e.ColumnIndex + 1}) wurde geklickt.");
             }
         }
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            // Beispiel für die Initialisierung, wenn das Formular geladen wird
+            // Beispiel fÃ¼r die Initialisierung, wenn das Formular geladen wird
             MessageBox.Show("Das Formular wurde geladen.");
         }
     }
