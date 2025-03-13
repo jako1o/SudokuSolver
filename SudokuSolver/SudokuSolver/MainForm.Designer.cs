@@ -3,26 +3,6 @@
     partial class MainForm
     {
         /// <summary>
-        ///  Required designer variable.
-        /// </summary>
-        private System.ComponentModel.IContainer components = null;
-
-        /// <summary>
-        ///  Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing && (components != null))
-            {
-                components.Dispose();
-            }
-            base.Dispose(disposing);
-        }
-
-        #region Windows Form Designer generated code
-
-        /// <summary>
         ///  Required method for Designer support - do not modify
         ///  the contents of this method with the code editor.
         /// </summary>
@@ -36,28 +16,59 @@
             // 
             // tableLayoutPanel1
             // 
-            tableLayoutPanel1.ColumnCount = 3;
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 112F));
-            tableLayoutPanel1.Controls.Add(dataGridView1, 0, 0);
+            tableLayoutPanel1.ColumnCount = 9;
+            tableLayoutPanel1.ColumnStyles.Clear();
+            for (int i = 0; i < 9; i++)
+            {
+                tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 11.11F));
+            }
+
+            tableLayoutPanel1.RowCount = 9;
+            tableLayoutPanel1.RowStyles.Clear();
+            for (int i = 0; i < 9; i++)
+            {
+                tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 11.11F));
+            }
+
+            tableLayoutPanel1.Controls.Add(dataGridView1, 0, 0); // Zelle 0,0 für DataGridView
             tableLayoutPanel1.Location = new Point(90, 58);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
-            tableLayoutPanel1.RowCount = 3;
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 74F));
-            tableLayoutPanel1.Size = new Size(326, 231);
+            tableLayoutPanel1.Size = new Size(540, 450); // Die Größe für das Layout anpassen
             tableLayoutPanel1.TabIndex = 0;
             // 
             // dataGridView1
             // 
+            dataGridView1.AllowUserToAddRows = false;
+            dataGridView1.AllowUserToDeleteRows = false;
+            dataGridView1.AllowUserToResizeColumns = false;
+            dataGridView1.AllowUserToResizeRows = false;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Location = new Point(3, 3);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(94, 44);
+            dataGridView1.Size = new Size(534, 444); // Die Größe des DataGridView anpassen
             dataGridView1.TabIndex = 0;
+
+            // 9x9 Zellen für Sudoku-Raster hinzufügen
+            for (int i = 0; i < 9; i++)
+            {
+                dataGridView1.Columns.Add(new DataGridViewTextBoxColumn());
+            }
+
+            for (int i = 0; i < 9; i++)
+            {
+                dataGridView1.Rows.Add();
+            }
+
+            // Zellenhöhe und -breite anpassen
+            for (int i = 0; i < 9; i++)
+            {
+                dataGridView1.Columns[i].Width = 60;
+                dataGridView1.Rows[i].Height = 60;
+            }
+
+            // Event-Handler hinzufügen
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
+
             // 
             // MainForm
             // 
@@ -73,9 +84,12 @@
             ResumeLayout(false);
         }
 
-        #endregion
+        #region Designer-Variablen
 
         private TableLayoutPanel tableLayoutPanel1;
         private DataGridView dataGridView1;
+
+        #endregion
     }
 }
+

@@ -94,5 +94,23 @@ namespace SudokuSolver
                 }
             }
         }
+
+        // Event-Handler für CellContentClick
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            // Prüfen, ob der Klick innerhalb der gültigen Zellen war (nicht Kopfzeilen oder äußere Zellen)
+            if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
+            {
+                // Hier kannst du beliebige Logik hinzufügen, um den Klick zu verarbeiten
+                // Zum Beispiel: den Wert der angeklickten Zelle ändern oder etwas anderes tun
+                MessageBox.Show($"Zelle ({e.RowIndex + 1}, {e.ColumnIndex + 1}) wurde geklickt.");
+            }
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            // Beispiel für die Initialisierung, wenn das Formular geladen wird
+            MessageBox.Show("Das Formular wurde geladen.");
+        }
     }
 }
