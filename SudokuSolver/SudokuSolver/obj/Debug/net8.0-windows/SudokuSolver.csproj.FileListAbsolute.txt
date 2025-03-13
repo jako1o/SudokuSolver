@@ -1,0 +1,7 @@
+C:\Users\jakob\Documents\GitHub\SudokuSolver\SudokuSolver\SudokuSolver\obj\Debug\net8.0-windows\SudokuSolver.MainForm.resources
+C:\Users\jakob\Documents\GitHub\SudokuSolver\SudokuSolver\SudokuSolver\obj\Debug\net8.0-windows\SudokuSolver.csproj.GenerateResource.cache
+C:\Users\jakob\Documents\GitHub\SudokuSolver\SudokuSolver\SudokuSolver\obj\Debug\net8.0-windows\SudokuSolver.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jakob\Documents\GitHub\SudokuSolver\SudokuSolver\SudokuSolver\obj\Debug\net8.0-windows\SudokuSolver.AssemblyInfoInputs.cache
+C:\Users\jakob\Documents\GitHub\SudokuSolver\SudokuSolver\SudokuSolver\obj\Debug\net8.0-windows\SudokuSolver.AssemblyInfo.cs
+C:\Users\jakob\Documents\GitHub\SudokuSolver\SudokuSolver\SudokuSolver\obj\Debug\net8.0-windows\SudokuSolver.csproj.CoreCompileInputs.cache
+C:\Users\jakob\Documents\GitHub\SudokuSolver\SudokuSolver\SudokuSolver\obj\Debug\net8.0-windows\SudokuSolver.sourcelink.json
