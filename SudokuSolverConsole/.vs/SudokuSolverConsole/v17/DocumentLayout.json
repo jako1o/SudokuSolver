@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\jakob.stoye\\Documents\\GitHub\\SudokuSolver\\SudokuSolverConsole\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{10AA987A-AB69-4E35-895B-67EE7A69FCBD}|SudokuSolverConsole.csproj|c:\\users\\jakob.stoye\\documents\\github\\sudokusolver\\sudokusolverconsole\\sudokugrid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10AA987A-AB69-4E35-895B-67EE7A69FCBD}|SudokuSolverConsole.csproj|solutionrelative:sudokugrid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10AA987A-AB69-4E35-895B-67EE7A69FCBD}|SudokuSolverConsole.csproj|c:\\users\\jakob.stoye\\documents\\github\\sudokusolver\\sudokusolverconsole\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10AA987A-AB69-4E35-895B-67EE7A69FCBD}|SudokuSolverConsole.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SudokuGrid.cs",
+              "DocumentMoniker": "C:\\Users\\jakob.stoye\\Documents\\GitHub\\SudokuSolver\\SudokuSolverConsole\\SudokuGrid.cs",
+              "RelativeDocumentMoniker": "SudokuGrid.cs",
+              "ToolTip": "C:\\Users\\jakob.stoye\\Documents\\GitHub\\SudokuSolver\\SudokuSolverConsole\\SudokuGrid.cs",
+              "RelativeToolTip": "SudokuGrid.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwCQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T16:48:02.659Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\jakob.stoye\\Documents\\GitHub\\SudokuSolver\\SudokuSolverConsole\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\jakob.stoye\\Documents\\GitHub\\SudokuSolver\\SudokuSolverConsole\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T16:46:09.467Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
