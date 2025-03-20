@@ -42,7 +42,7 @@ namespace SudokuSolverConsole
             {
                 for (int j = 0; j < cols; j++)
                 {
-                    if (gr[i, j] < 1 || gr[i, j] > 9)
+                    if (gr[i, j] < 0 || gr[i, j] > 9)
                     {
                         NumbersValid = false; ; // Ungültige Zahl gefunden
                     }
@@ -53,29 +53,8 @@ namespace SudokuSolverConsole
                 }
             }                       
         }
-
+                   
             
-            
-        protected bool IsValidSudokuArray(uint[,] array)
-        {
-                int rows = array.GetLength(0);
-                int cols = array.GetLength(1);
-
-                for (int i = 0; i < rows; i++)
-                {
-                    for (int j = 0; j < cols; j++)
-                    {
-                        if (array[i, j] < 1 || array[i, j] > 9)
-                        {
-                            return false; // Ungültige Zahl gefunden
-                        }
-                    }
-                }
-
-                return true; // Alle Zahlen sind gültig
-        }
-
-        }
-
+      
     }
 }
