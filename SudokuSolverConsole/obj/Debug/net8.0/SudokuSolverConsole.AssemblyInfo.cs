@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SudokuSolverConsole")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e6170211f32c3a69202054fc24da1e97a82ebe58")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+73ea624ce2269a85f17312303bfa760e14fec685")]
 [assembly: System.Reflection.AssemblyProductAttribute("SudokuSolverConsole")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SudokuSolverConsole")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
