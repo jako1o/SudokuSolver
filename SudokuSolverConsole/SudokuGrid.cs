@@ -13,49 +13,76 @@ namespace SudokuSolverConsole
         //Attribute
         protected uint[,] grid; //Array mit dem gearbeitet wird
         protected uint[,] originalGrid; //Variable, um ursprünglichen Zustand zu speichern
-        //Konstruktoren
-
+        protected bool[,] isGiven; //Struktur, die speichert ob Zahl vorher schon gegeben war, um diese dann später rot auszugeben
+       
+        //Konstruktor
         public SudokuGrid()
         {
             grid = new uint[9, 9]; //leeres Grid initialisieren          
-
+            isGiven = new bool[9, 9];
+            originalGrid = new uint[9, 9];
         }
 
 
         //Methoden
 
-        public void CreateGrid(uint[,] gr)                                //Neues Array erzeugen Methode
+        public bool CreateGrid(uint[,] gr)  //Neues Grid erzeugen Methode
         {
             //Überprüfen, ob eingegebenes Array die richtige Größe hat
             if (gr.GetLength(0) != 9 || gr.GetLength(1) != 9)
             {
                 Console.WriteLine("Das eingegebene Raster hat nicht die erforderliche Größe (9x9).");
                 grid = new uint[9, 9]; // Rückgabe eines leeren 9x9-Arrays
+                return false;
             }
 
             //Zahlen auf Gültigkeit prüfen (0-9 erlaubt)
-            for (int i = 0; i < 9; i++)
+            for (int i = 0; i < gr.GetLength(0); i++)
             {
-                for (int j = 0; j < 9; j++)
+                for (int j = 0; j < gr.GetLength(1); j++)
                 {
                     if (gr[i, j] > 9)
                     {
                         Console.WriteLine("Das eingegebene Raster enthält ungültige Zahlen.");
                         grid = new uint[9, 9]; //Rückgabe eines leeren 9x9-Arrays
+                        return false;
                     }
                 }
             }
 
-           
+            //Überprüfen, ob Eingabe leer ist.
+            bool empty = true;
+            foreach (var item in gr)
+            {
+                if (item != 0)
+                {
+                    empty = false;
+                }               
+            }
+            if (empty) return false;
+
+
 
             Console.WriteLine("Ein neues Raster wurde erfolgreich erstellt.");
             grid = gr; //Neues Raster in Klassenvariable schreiben
 
             originalGrid = CopyGrid(grid); //nach dem erzeugen wird hier der Ursprungszustand gespeichert
 
+            for (int i = 0; i < 9; i++) //Markiert gegebene Zahlen in der isGiven Struktur mit true
+            {
+                for (int j = 0; j < 9; j++)
+                {
+                    if (grid[i, j] != 0)
+                    {
+                        isGiven[i, j] = true;  // Markiere als gegeben
+                    }
+                }
+            }
+            
+            return true; //Gibt true zurück wenn erstellen erfolgreich
         }
 
-        public void PrintGrid()
+        public void PrintGrid()  //Methode zur Augabe
         {
             int size = grid.GetLength(0);
 
@@ -80,9 +107,18 @@ namespace SudokuSolverConsole
                     }
                     else
                     {
-                        Console.ForegroundColor = ConsoleColor.Red; // Farbe auf Rot setzen
-                        Console.Write(grid[i, j] + " "); // Zahl ausgeben mit Leerzeichen
-                        Console.ResetColor(); // Farbe zurücksetzen
+                       
+                        if (isGiven[i, j]) //Zahl rot
+                        {
+                            Console.ForegroundColor = ConsoleColor.Red; // Farbe auf Rot setzen
+                            Console.Write(grid[i, j] + " "); // Zahl ausgeben mit Leerzeichen
+                            Console.ResetColor(); // Farbe zurücksetzen
+                        }
+                        else //Zahl schwarz
+                        {
+                            Console.Write(grid[i, j] + " ");
+                        }
+
                     }
                 }
 
@@ -111,8 +147,6 @@ namespace SudokuSolverConsole
         {
             return originalGrid;
         }
-
-
 
         private uint[,] CopyGrid(uint[,] source) //Methode um Grid zu kopieren, da sonst immer die Referenz übergeben wird
         {            

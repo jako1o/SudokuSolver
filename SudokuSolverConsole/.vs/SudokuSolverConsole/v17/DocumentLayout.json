@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\jakob.stoye\\Desktop\\git\\SudokuSolver\\SudokuSolverConsole\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{10AA987A-AB69-4E35-895B-67EE7A69FCBD}|SudokuSolverConsole.csproj|c:\\users\\jakob.stoye\\desktop\\git\\sudokusolver\\sudokusolverconsole\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{10AA987A-AB69-4E35-895B-67EE7A69FCBD}|SudokuSolverConsole.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{10AA987A-AB69-4E35-895B-67EE7A69FCBD}|SudokuSolverConsole.csproj|c:\\users\\jakob.stoye\\desktop\\git\\sudokusolver\\sudokusolverconsole\\gamesolver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{10AA987A-AB69-4E35-895B-67EE7A69FCBD}|SudokuSolverConsole.csproj|solutionrelative:gamesolver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{10AA987A-AB69-4E35-895B-67EE7A69FCBD}|SudokuSolverConsole.csproj|c:\\users\\jakob.stoye\\desktop\\git\\sudokusolver\\sudokusolverconsole\\sudokugrid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{10AA987A-AB69-4E35-895B-67EE7A69FCBD}|SudokuSolverConsole.csproj|solutionrelative:sudokugrid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10AA987A-AB69-4E35-895B-67EE7A69FCBD}|SudokuSolverConsole.csproj|c:\\users\\jakob.stoye\\desktop\\git\\sudokusolver\\sudokusolverconsole\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10AA987A-AB69-4E35-895B-67EE7A69FCBD}|SudokuSolverConsole.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,43 +22,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "GameSolver.cs",
               "DocumentMoniker": "C:\\Users\\jakob.stoye\\Desktop\\git\\SudokuSolver\\SudokuSolverConsole\\GameSolver.cs",
               "RelativeDocumentMoniker": "GameSolver.cs",
               "ToolTip": "C:\\Users\\jakob.stoye\\Desktop\\git\\SudokuSolver\\SudokuSolverConsole\\GameSolver.cs",
               "RelativeToolTip": "GameSolver.cs",
-              "ViewState": "AgIAAFkAAAAAAAAAAAAIwG4AAABlAAAAAAAAAA==",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAwwFIAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-21T13:25:00.663Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "SudokuGrid.cs",
               "DocumentMoniker": "C:\\Users\\jakob.stoye\\Desktop\\git\\SudokuSolver\\SudokuSolverConsole\\SudokuGrid.cs",
               "RelativeDocumentMoniker": "SudokuGrid.cs",
               "ToolTip": "C:\\Users\\jakob.stoye\\Desktop\\git\\SudokuSolver\\SudokuSolverConsole\\SudokuGrid.cs",
               "RelativeToolTip": "SudokuGrid.cs",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAwwG8AAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABEAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-20T16:48:02.659Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\jakob.stoye\\Desktop\\git\\SudokuSolver\\SudokuSolverConsole\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\jakob.stoye\\Desktop\\git\\SudokuSolver\\SudokuSolverConsole\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-20T16:46:09.467Z",
               "EditorCaption": ""

@@ -17,12 +17,17 @@ uint[,] Array = {
     {0, 0, 0, 0, 8, 0, 0, 7, 9}
 };
 
+
+
+
 SudokuGrid TestGrid = new SudokuGrid();
 SudokuSolverBacktracking Solver = new SudokuSolverBacktracking(TestGrid);
 
-TestGrid.CreateGrid(Array);
+bool state = TestGrid.CreateGrid(Array);
+if (state)
+{
+    TestGrid.PrintGrid();
 
-TestGrid.PrintGrid();
-
-Solver.Solve();
-Solver.DisplayResult();
+    Solver.Solve();
+    Solver.DisplayResult();
+}
