@@ -11,12 +11,14 @@ namespace SudokuSolverConsole
     {
 
         //Attribute
-        protected uint[,] grid;
+        protected uint[,] grid; //Array mit dem gearbeitet wird
+        protected uint[,] originalGrid; //Variable, um ursprünglichen Zustand zu speichern
         //Konstruktoren
 
         public SudokuGrid()
         {
-            grid = new uint[9, 9];
+            grid = new uint[9, 9]; //leeres Grid initialisieren          
+
         }
 
 
@@ -44,8 +46,13 @@ namespace SudokuSolverConsole
                 }
             }
 
+           
+
             Console.WriteLine("Ein neues Raster wurde erfolgreich erstellt.");
             grid = gr; //Neues Raster in Klassenvariable schreiben
+
+            originalGrid = CopyGrid(grid); //nach dem erzeugen wird hier der Ursprungszustand gespeichert
+
         }
 
         public void PrintGrid()
@@ -73,7 +80,9 @@ namespace SudokuSolverConsole
                     }
                     else
                     {
+                        Console.ForegroundColor = ConsoleColor.Red; // Farbe auf Rot setzen
                         Console.Write(grid[i, j] + " "); // Zahl ausgeben mit Leerzeichen
+                        Console.ResetColor(); // Farbe zurücksetzen
                     }
                 }
 
@@ -93,6 +102,31 @@ namespace SudokuSolverConsole
             Console.WriteLine();
         }
 
+        public uint[,] GetGrid() //Getter um von Solve drauf zuzugreifen
+        {
+            return grid;
+        }
 
+        public uint[,] GetOriginalGrid() //Getter um auf Originalzustand zuzugreifen
+        {
+            return originalGrid;
+        }
+
+
+
+        private uint[,] CopyGrid(uint[,] source) //Methode um Grid zu kopieren, da sonst immer die Referenz übergeben wird
+        {            
+            uint[,] copy = new uint[source.GetLength(0), source.GetLength(1)];
+
+            for (uint i = 0; i < source.GetLength(0); i++)
+            {
+                for (uint j = 0; j < source.GetLength(1); j++)
+                {
+                    copy[i, j] = source[i, j];
+                }
+            }
+
+            return copy;
+        }
     }
 }

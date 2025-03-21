@@ -18,7 +18,11 @@ uint[,] Array = {
 };
 
 SudokuGrid TestGrid = new SudokuGrid();
+SudokuSolverBacktracking Solver = new SudokuSolverBacktracking(TestGrid);
 
 TestGrid.CreateGrid(Array);
 
 TestGrid.PrintGrid();
+
+Solver.Solve();
+Solver.DisplayResult();
