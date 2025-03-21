@@ -14,47 +14,85 @@ namespace SudokuSolverConsole
         protected uint[,] grid;
         //Konstruktoren
 
+        public SudokuGrid()
+        {
+            grid = new uint[9, 9];
+        }
+
+
         //Methoden
 
-        protected uint[,] CreateGrid(uint[,] gr)
+        public void CreateGrid(uint[,] gr)                                //Neues Array erzeugen Methode
         {
-            //Überprüfen, ob eingegebenes Array valid ist.
-
-            //Array Dimensionen
-            bool LenghtValid;
-
-            if (gr.GetLength(0) == 9 && gr.GetLength(1) == 9)
+            //Überprüfen, ob eingegebenes Array die richtige Größe hat
+            if (gr.GetLength(0) != 9 || gr.GetLength(1) != 9)
             {
-                LenghtValid = true;
-            }
-            else
-            {
-                LenghtValid = false;
+                Console.WriteLine("Das eingegebene Raster hat nicht die erforderliche Größe (9x9).");
+                grid = new uint[9, 9]; // Rückgabe eines leeren 9x9-Arrays
             }
 
-
-            //Zahlen gültig
-            int rows = gr.GetLength(0);
-            int cols = gr.GetLength(1);
-            bool NumbersValid;
-
-            for (int i = 0; i < rows; i++)
+            //Zahlen auf Gültigkeit prüfen (0-9 erlaubt)
+            for (int i = 0; i < 9; i++)
             {
-                for (int j = 0; j < cols; j++)
+                for (int j = 0; j < 9; j++)
                 {
-                    if (gr[i, j] < 0 || gr[i, j] > 9)
+                    if (gr[i, j] > 9)
                     {
-                        NumbersValid = false; ; // Ungültige Zahl gefunden
+                        Console.WriteLine("Das eingegebene Raster enthält ungültige Zahlen.");
+                        grid = new uint[9, 9]; //Rückgabe eines leeren 9x9-Arrays
+                    }
+                }
+            }
+
+            Console.WriteLine("Ein neues Raster wurde erfolgreich erstellt.");
+            grid = gr; //Neues Raster in Klassenvariable schreiben
+        }
+
+        public void PrintGrid()
+        {
+            int size = grid.GetLength(0);
+
+            for (int i = 0; i < size; i++)
+            {
+                if (i % 3 == 0 && i != 0)
+                {
+                    Console.WriteLine("------+-------+------"); // Horizontale Trennlinie
+                }
+
+                for (int j = 0; j < size; j++)
+                {
+                    if (j % 3 == 0 && j != 0)
+                    {
+                        Console.Write("| "); // Vertikale Trennlinie
+                    }
+
+                    
+                    if (grid[i, j] == 0)
+                    {
+                        Console.Write("  "); // Wenn das Feld 0 ist, gib nur ein Leerzeichen aus
                     }
                     else
                     {
-                        NumbersValid = true; //Array gültig
+                        Console.Write(grid[i, j] + " "); // Zahl ausgeben mit Leerzeichen
                     }
                 }
-            }                       
+
+                Console.WriteLine(); // Neue Zeile nach jeder Reihe
+            }
         }
-                   
-            
-      
+
+        public void PrintGridStraight()  //Gibt die Zahlen zum Test ob Inhalt da ist hintereinander aus
+        {
+            for (int i = 0; i < 9; i++)
+            {
+                for (int j = 0; j < 9; j++)
+                {
+                    Console.Write(grid[i,j] + " , ");                    
+                }
+            }
+            Console.WriteLine();
+        }
+
+
     }
 }
