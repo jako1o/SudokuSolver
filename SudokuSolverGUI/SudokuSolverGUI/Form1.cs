@@ -46,16 +46,16 @@ namespace SudokuSolverGUI
             }
 
             // Hintergrundfarben für Blöcke
-            for (int i = 0; i < gridSize; i++)
-            {
-                for (int j = 0; j < gridSize; j++)
-                {
-                    if ((i / 3 + j / 3) % 2 == 0)
-                    {
-                        dgvSudoku.Rows[i].Cells[j].Style.BackColor = Color.LightGray;
-                    }
-                }
-            }
+            //for (int i = 0; i < gridSize; i++)
+            //{
+            //    for (int j = 0; j < gridSize; j++)
+            //    {
+            //        if ((i / 3 + j / 3) % 2 == 0)
+            //        {
+            //            dgvSudoku.Rows[i].Cells[j].Style.BackColor = Color.LightGray;
+            //        }
+            //    }
+            //}
 
             this.Controls.Add(dgvSudoku);
         }
