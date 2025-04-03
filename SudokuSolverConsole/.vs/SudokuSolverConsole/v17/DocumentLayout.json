@@ -1,18 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\jakob.stoye\\Documents\\GitHub\\SudokuSolver\\SudokuSolverConsole\\",
+  "WorkspaceRootPath": "C:\\Users\\danie\\OneDrive\\Dokumente\\GitHub\\SudokuSolver\\SudokuSolverConsole\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{10AA987A-AB69-4E35-895B-67EE7A69FCBD}|SudokuSolverConsole.csproj|c:\\users\\jakob.stoye\\documents\\github\\sudokusolver\\sudokusolverconsole\\gamesolver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{10AA987A-AB69-4E35-895B-67EE7A69FCBD}|SudokuSolverConsole.csproj|solutionrelative:gamesolver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{10AA987A-AB69-4E35-895B-67EE7A69FCBD}|SudokuSolverConsole.csproj|C:\\Users\\danie\\OneDrive\\Dokumente\\GitHub\\SudokuSolver\\SudokuSolverConsole\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10AA987A-AB69-4E35-895B-67EE7A69FCBD}|SudokuSolverConsole.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{10AA987A-AB69-4E35-895B-67EE7A69FCBD}|SudokuSolverConsole.csproj|C:\\Users\\jakob.stoye\\Documents\\GitHub\\SudokuSolver\\SudokuSolverConsole\\sudokugrid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{10AA987A-AB69-4E35-895B-67EE7A69FCBD}|SudokuSolverConsole.csproj|C:\\Users\\danie\\OneDrive\\Dokumente\\GitHub\\SudokuSolver\\SudokuSolverConsole\\sudokugrid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{10AA987A-AB69-4E35-895B-67EE7A69FCBD}|SudokuSolverConsole.csproj|solutionrelative:sudokugrid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{10AA987A-AB69-4E35-895B-67EE7A69FCBD}|SudokuSolverConsole.csproj|C:\\Users\\jakob.stoye\\Documents\\GitHub\\SudokuSolver\\SudokuSolverConsole\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{10AA987A-AB69-4E35-895B-67EE7A69FCBD}|SudokuSolverConsole.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{10AA987A-AB69-4E35-895B-67EE7A69FCBD}|SudokuSolverConsole.csproj|c:\\users\\danie\\onedrive\\dokumente\\github\\sudokusolver\\sudokusolverconsole\\gamesolver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10AA987A-AB69-4E35-895B-67EE7A69FCBD}|SudokuSolverConsole.csproj|solutionrelative:gamesolver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,17 +22,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "GameSolver.cs",
-              "DocumentMoniker": "C:\\Users\\jakob.stoye\\Documents\\GitHub\\SudokuSolver\\SudokuSolverConsole\\GameSolver.cs",
+              "DocumentMoniker": "C:\\Users\\danie\\OneDrive\\Dokumente\\GitHub\\SudokuSolver\\SudokuSolverConsole\\GameSolver.cs",
               "RelativeDocumentMoniker": "GameSolver.cs",
-              "ToolTip": "C:\\Users\\jakob.stoye\\Documents\\GitHub\\SudokuSolver\\SudokuSolverConsole\\GameSolver.cs",
+              "ToolTip": "C:\\Users\\danie\\OneDrive\\Dokumente\\GitHub\\SudokuSolver\\SudokuSolverConsole\\GameSolver.cs",
               "RelativeToolTip": "GameSolver.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAowHgAAAANAAAA",
+              "ViewState": "AQIAAEMAAAAAAAAAAAAqwH8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-21T13:25:00.663Z",
               "EditorCaption": ""
@@ -41,24 +41,24 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "SudokuGrid.cs",
-              "DocumentMoniker": "C:\\Users\\jakob.stoye\\Documents\\GitHub\\SudokuSolver\\SudokuSolverConsole\\SudokuGrid.cs",
+              "DocumentMoniker": "C:\\Users\\danie\\OneDrive\\Dokumente\\GitHub\\SudokuSolver\\SudokuSolverConsole\\SudokuGrid.cs",
               "RelativeDocumentMoniker": "SudokuGrid.cs",
-              "ToolTip": "C:\\Users\\jakob.stoye\\Documents\\GitHub\\SudokuSolver\\SudokuSolverConsole\\SudokuGrid.cs",
+              "ToolTip": "C:\\Users\\danie\\OneDrive\\Dokumente\\GitHub\\SudokuSolver\\SudokuSolverConsole\\SudokuGrid.cs",
               "RelativeToolTip": "SudokuGrid.cs",
-              "ViewState": "AQIAAIYAAAAAAAAAAAAIwJYAAAAfAAAA",
+              "ViewState": "AQIAAF4AAAAAAAAAAAAAAKUAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-20T16:48:02.659Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\jakob.stoye\\Documents\\GitHub\\SudokuSolver\\SudokuSolverConsole\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\danie\\OneDrive\\Dokumente\\GitHub\\SudokuSolver\\SudokuSolverConsole\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\jakob.stoye\\Documents\\GitHub\\SudokuSolver\\SudokuSolverConsole\\Program.cs",
+              "ToolTip": "C:\\Users\\danie\\OneDrive\\Dokumente\\GitHub\\SudokuSolver\\SudokuSolverConsole\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAfAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-20T16:46:09.467Z",
               "EditorCaption": ""

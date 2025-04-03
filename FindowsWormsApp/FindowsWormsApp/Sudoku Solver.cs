@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SudokuSolverConsole
 {
-    internal class SudokuSolverBacktracking
+    internal class SudokuSolver
     {
         //Attribute
         private SudokuGrid SudokuGrid; //Verwende die Klasse SudokuGrid
@@ -15,10 +15,10 @@ namespace SudokuSolverConsole
 
         //Konstrukor
 
-        public SudokuSolverBacktracking(SudokuGrid grid)
+        public SudokuSolver(SudokuGrid grid)
         {
-           SudokuGrid = grid; // Speichert die Instanz des SudokuGrid
-           isSolved = false;            
+            SudokuGrid = grid; // Speichert die Instanz des SudokuGrid
+            isSolved = false;
         }
 
         //Methoden
@@ -48,11 +48,11 @@ namespace SudokuSolverConsole
                     grid[row, col] = num;
 
                     //Rekursiver Aufruf, Methode ruft sich selbst auf und läuft nochmal durch, ist komplett verschickt :)
-                    if (Solve()) return true; 
+                    if (Solve()) return true;
 
                     grid[row, col] = 0; //Backtracking, Zahl wird auf 0 zurückgesetzt, wenn vorher nicht im rekursiven Aufruf true kam, also keine Lösung gefunden wurde
 
-                }                               
+                }
             }
 
             isSolved = false;
@@ -60,7 +60,7 @@ namespace SudokuSolverConsole
 
         }
 
-        private (uint,uint)? FindEmptyPosition()  //Leeres Feld finden, gibt entweder Koordinaten als Tuple oder null zurück
+        private (uint, uint)? FindEmptyPosition()  //Leeres Feld finden, gibt entweder Koordinaten als Tuple oder null zurück
         {
             var grid = SudokuGrid.GetGrid();
 
@@ -83,18 +83,18 @@ namespace SudokuSolverConsole
             // Überprüfe die Zeile
             for (int i = 0; i < 9; i++)
             {
-                if (grid[row, i] == num) return false;                                                                 
+                if (grid[row, i] == num) return false;
             }
 
             // Überprüfe die Spalte
             for (int i = 0; i < 9; i++)
             {
-                if (grid[i, col] == num) return false;                                                                      
+                if (grid[i, col] == num) return false;
             }
 
             // Bestimme den Startpunkt des 3x3-Blocks (wird ganzzahlig geteilt)
-            uint startRow = row / 3 * 3;  
-            uint startCol = col / 3 * 3;  
+            uint startRow = row / 3 * 3;
+            uint startCol = col / 3 * 3;
 
             // Durchlaufe alle Zellen im 3x3-Block
             for (uint i = startRow; i < startRow + 3; i++)
@@ -105,23 +105,12 @@ namespace SudokuSolverConsole
                 }
             }
 
-            
+
 
             return true; //Gib true aus, wenn kein Fehler gefunden wurde
         }
 
-        public void DisplayResult() //Methode um anzuzeigen ob gelöst werden konnte und dann Ergebnis
-        {
-            if (isSolved)
-            {
-                Console.WriteLine("Das Sudoku wurde erfolgreich gelöst!");
-                SudokuGrid.PrintGrid();  // Zeige das gelöste Sudoku an
-            }
-            else
-            {
-                Console.WriteLine("Das Sudoku konnte nicht gelöst werden.");
-            }
-        }
+        
 
     }
 }

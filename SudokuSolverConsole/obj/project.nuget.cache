@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "do3PnGQ95ues/oC63Pai12xiFccLg3206znsuL9qHhFM9obQlQyQu31N5PUXeQI6rj21SSra/myHWCbYh5j2aA==",
+  "dgSpecHash": "MZc1wH29hRVzzSwDxfxSNbeUScstRU53HmQLaDZ/oDbzHTLDMu0ySh4MfG/EwoPtCL5wzpA2qGeUefSMIAdYVA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jakob.stoye\\Documents\\GitHub\\SudokuSolver\\SudokuSolverConsole\\SudokuSolverConsole.csproj",
+  "projectFilePath": "C:\\Users\\danie\\OneDrive\\Dokumente\\GitHub\\SudokuSolver\\SudokuSolverConsole\\SudokuSolverConsole.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

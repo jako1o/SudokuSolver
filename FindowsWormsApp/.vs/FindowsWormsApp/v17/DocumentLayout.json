@@ -1,14 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\danie\\source\\repos\\FindowsWormsApp\\",
+  "WorkspaceRootPath": "C:\\Users\\danie\\OneDrive\\Dokumente\\GitHub\\SudokuSolver\\FindowsWormsApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C14F555D-0795-4A28-B7A4-509E2DD41311}|FindowsWormsApp\\FindowsWormsApp.csproj|c:\\users\\danie\\source\\repos\\findowswormsapp\\findowswormsapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C14F555D-0795-4A28-B7A4-509E2DD41311}|FindowsWormsApp\\FindowsWormsApp.csproj|solutionrelative:findowswormsapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C14F555D-0795-4A28-B7A4-509E2DD41311}|FindowsWormsApp\\FindowsWormsApp.csproj|c:\\users\\danie\\onedrive\\dokumente\\github\\sudokusolver\\findowswormsapp\\findowswormsapp\\sudokugui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C14F555D-0795-4A28-B7A4-509E2DD41311}|FindowsWormsApp\\FindowsWormsApp.csproj|solutionrelative:findowswormsapp\\sudokugui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C14F555D-0795-4A28-B7A4-509E2DD41311}|FindowsWormsApp\\FindowsWormsApp.csproj|c:\\users\\danie\\source\\repos\\findowswormsapp\\findowswormsapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C14F555D-0795-4A28-B7A4-509E2DD41311}|FindowsWormsApp\\FindowsWormsApp.csproj|solutionrelative:findowswormsapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{C14F555D-0795-4A28-B7A4-509E2DD41311}|FindowsWormsApp\\FindowsWormsApp.csproj|c:\\users\\danie\\onedrive\\dokumente\\github\\sudokusolver\\findowswormsapp\\findowswormsapp\\sudokugrid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C14F555D-0795-4A28-B7A4-509E2DD41311}|FindowsWormsApp\\FindowsWormsApp.csproj|solutionrelative:findowswormsapp\\sudokugrid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C14F555D-0795-4A28-B7A4-509E2DD41311}|FindowsWormsApp\\FindowsWormsApp.csproj|c:\\users\\danie\\onedrive\\dokumente\\github\\sudokusolver\\findowswormsapp\\findowswormsapp\\sudoku solver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C14F555D-0795-4A28-B7A4-509E2DD41311}|FindowsWormsApp\\FindowsWormsApp.csproj|solutionrelative:findowswormsapp\\sudoku solver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +22,46 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\danie\\source\\repos\\FindowsWormsApp\\FindowsWormsApp\\Program.cs",
-              "RelativeDocumentMoniker": "FindowsWormsApp\\Program.cs",
-              "ToolTip": "C:\\Users\\danie\\source\\repos\\FindowsWormsApp\\FindowsWormsApp\\Program.cs",
-              "RelativeToolTip": "FindowsWormsApp\\Program.cs",
-              "ViewState": "AQIAAIMAAAAAAAAAAAAYwJEAAAAAAAAA",
+              "DocumentIndex": 1,
+              "Title": "SudokuGrid.cs",
+              "DocumentMoniker": "C:\\Users\\danie\\OneDrive\\Dokumente\\GitHub\\SudokuSolver\\FindowsWormsApp\\FindowsWormsApp\\SudokuGrid.cs",
+              "RelativeDocumentMoniker": "FindowsWormsApp\\SudokuGrid.cs",
+              "ToolTip": "C:\\Users\\danie\\OneDrive\\Dokumente\\GitHub\\SudokuSolver\\FindowsWormsApp\\FindowsWormsApp\\SudokuGrid.cs",
+              "RelativeToolTip": "FindowsWormsApp\\SudokuGrid.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAQwB0AAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T15:21:10.012Z",
+              "WhenOpened": "2025-04-03T16:21:38.306Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form1.cs [Entwurf]",
-              "DocumentMoniker": "C:\\Users\\danie\\source\\repos\\FindowsWormsApp\\FindowsWormsApp\\Form1.cs",
-              "RelativeDocumentMoniker": "FindowsWormsApp\\Form1.cs",
-              "ToolTip": "C:\\Users\\danie\\source\\repos\\FindowsWormsApp\\FindowsWormsApp\\Form1.cs [Entwurf]",
-              "RelativeToolTip": "FindowsWormsApp\\Form1.cs [Entwurf]",
+              "DocumentIndex": 2,
+              "Title": "Sudoku Solver.cs",
+              "DocumentMoniker": "C:\\Users\\danie\\OneDrive\\Dokumente\\GitHub\\SudokuSolver\\FindowsWormsApp\\FindowsWormsApp\\Sudoku Solver.cs",
+              "RelativeDocumentMoniker": "FindowsWormsApp\\Sudoku Solver.cs",
+              "ToolTip": "C:\\Users\\danie\\OneDrive\\Dokumente\\GitHub\\SudokuSolver\\FindowsWormsApp\\FindowsWormsApp\\Sudoku Solver.cs",
+              "RelativeToolTip": "FindowsWormsApp\\Sudoku Solver.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAwBEAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T15:20:52.719Z",
-              "EditorCaption": " [Entwurf]"
+              "WhenOpened": "2025-04-03T15:39:37.594Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SudokuGUI.cs",
+              "DocumentMoniker": "C:\\Users\\danie\\OneDrive\\Dokumente\\GitHub\\SudokuSolver\\FindowsWormsApp\\FindowsWormsApp\\SudokuGUI.cs",
+              "RelativeDocumentMoniker": "FindowsWormsApp\\SudokuGUI.cs",
+              "ToolTip": "C:\\Users\\danie\\OneDrive\\Dokumente\\GitHub\\SudokuSolver\\FindowsWormsApp\\FindowsWormsApp\\SudokuGUI.cs",
+              "RelativeToolTip": "FindowsWormsApp\\SudokuGUI.cs",
+              "ViewState": "AQIAAHMAAAAAAAAAAAA5wIcAAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T15:21:10.012Z",
+              "EditorCaption": ""
             }
           ]
         }

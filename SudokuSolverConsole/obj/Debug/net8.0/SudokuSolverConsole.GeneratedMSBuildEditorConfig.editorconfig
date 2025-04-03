@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SudokuSolverConsole
-build_property.ProjectDir = C:\Users\jakob.stoye\Documents\GitHub\SudokuSolver\SudokuSolverConsole\
+build_property.ProjectDir = C:\Users\danie\OneDrive\Dokumente\GitHub\SudokuSolver\SudokuSolverConsole\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

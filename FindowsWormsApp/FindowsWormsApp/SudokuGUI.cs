@@ -1,16 +1,21 @@
 using System;
 using System.Drawing;
 using System.Windows.Forms;
+using SudokuSolverConsole;
+
+
 
 namespace DataGridViewSoduko
 {
-    public class MainForm : Form
+    public class SudokuGUI : Form
     {
         private DataGridView dataGridView;
         private Button solveButton;
         private Button resetButton;
+        private uint[,] InputArray;
 
-        public MainForm()
+
+        public SudokuGUI()
         {
             // Initialisierung der grafischen Komponenten
             InitializeComponents();
@@ -49,7 +54,7 @@ namespace DataGridViewSoduko
                 col.Width = 50; // Feste Spaltenbreite
             }
 
-            for (int i = 0; i < 9; i++)
+            for (uint i = 0; i < 9; i++)
             {
                 dataGridView.Rows.Add(); // Hinzufügen der Zeilen
             }
@@ -64,7 +69,7 @@ namespace DataGridViewSoduko
             {
                 Text = "Lösen", // Beschriftung des Buttons
                 Location = new Point(90, 520), // Position
-                Size = new Size(100, 30) // Buttongröße
+                Size = new Size(103, 30) // Buttongröße
             };
             solveButton.Click += SolveButton_Click; // Event-Handler für Klick
 
@@ -121,7 +126,7 @@ namespace DataGridViewSoduko
 
         private void SolveButton_Click(object sender, EventArgs e)
         {
-            int[,] sudokuGrid = new int[9, 9]; // 2D-Array für Sudoku-Daten
+            uint[,] inputGrid = new uint[9, 9]; // 2D-Array für Sudoku-Daten
 
             for (int row = 0; row < 9; row++)
             {
@@ -129,26 +134,50 @@ namespace DataGridViewSoduko
                 {
                     // Validiert die Zelle und speichert ihre Werte im Array
                     if (dataGridView.Rows[row].Cells[col].Value != null &&
-                        int.TryParse(dataGridView.Rows[row].Cells[col].Value.ToString(), out int number))
+                       uint.TryParse(dataGridView.Rows[row].Cells[col].Value.ToString(), out uint number))
                     {
-                        sudokuGrid[row, col] = number;
+                        inputGrid[row, col] = number;
                     }
                     else
                     {
-                        sudokuGrid[row, col] = 0; // Ungültige oder leere Werte auf 0 setzen
+                        inputGrid[row, col] = 0; // Ungültige oder leere Werte auf 0 setzen
                     }
                 }
             }
 
-            // Informationen an den Benutzer ausgeben
-            MessageBox.Show("Sudoku-Daten wurden gespeichert!", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            uint[,] outputGrid = SolveGrid(inputGrid);
+
+            //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+            //HIer dann output in das Datagrid view reinböllern
+        }
+
+        public uint[,] GetGrid() //Getter zur Übergabe an Solver
+        {
+            return InputArray;
+        }
+
+        public uint[,] SolveGrid(uint[,] grid)
+        {
+            SudokuGrid ToSolveGrid = new SudokuGrid();
+            ToSolveGrid.CreateGrid(grid);                                   
+
+            SudokuSolver Solver = new SudokuSolver(ToSolveGrid);
+
+            if (Solver.Solve())
+            {
+                uint[,] temp = ToSolveGrid.GetGrid();
+                return temp;
+            }
+
+            return new uint[9,9];
+
         }
 
         [STAThread]
         private static void Main()
         {
             Application.EnableVisualStyles(); // Aktiviert visuelle Stile
-            Application.Run(new MainForm()); // Startet das Hauptformular
+            Application.Run(new SudokuGUI()); // Startet das Hauptformular
         }
     }
 }
