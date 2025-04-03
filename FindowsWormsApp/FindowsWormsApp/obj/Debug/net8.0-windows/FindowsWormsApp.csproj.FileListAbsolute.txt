@@ -1,0 +1,16 @@
+C:\Users\danie\source\repos\FindowsWormsApp\FindowsWormsApp\bin\Debug\net8.0-windows\FindowsWormsApp.exe
+C:\Users\danie\source\repos\FindowsWormsApp\FindowsWormsApp\bin\Debug\net8.0-windows\FindowsWormsApp.deps.json
+C:\Users\danie\source\repos\FindowsWormsApp\FindowsWormsApp\bin\Debug\net8.0-windows\FindowsWormsApp.runtimeconfig.json
+C:\Users\danie\source\repos\FindowsWormsApp\FindowsWormsApp\bin\Debug\net8.0-windows\FindowsWormsApp.dll
+C:\Users\danie\source\repos\FindowsWormsApp\FindowsWormsApp\bin\Debug\net8.0-windows\FindowsWormsApp.pdb
+C:\Users\danie\source\repos\FindowsWormsApp\FindowsWormsApp\obj\Debug\net8.0-windows\FindowsWormsApp.Form1.resources
+C:\Users\danie\source\repos\FindowsWormsApp\FindowsWormsApp\obj\Debug\net8.0-windows\FindowsWormsApp.csproj.GenerateResource.cache
+C:\Users\danie\source\repos\FindowsWormsApp\FindowsWormsApp\obj\Debug\net8.0-windows\FindowsWormsApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\danie\source\repos\FindowsWormsApp\FindowsWormsApp\obj\Debug\net8.0-windows\FindowsWormsApp.AssemblyInfoInputs.cache
+C:\Users\danie\source\repos\FindowsWormsApp\FindowsWormsApp\obj\Debug\net8.0-windows\FindowsWormsApp.AssemblyInfo.cs
+C:\Users\danie\source\repos\FindowsWormsApp\FindowsWormsApp\obj\Debug\net8.0-windows\FindowsWormsApp.csproj.CoreCompileInputs.cache
+C:\Users\danie\source\repos\FindowsWormsApp\FindowsWormsApp\obj\Debug\net8.0-windows\FindowsWormsApp.dll
+C:\Users\danie\source\repos\FindowsWormsApp\FindowsWormsApp\obj\Debug\net8.0-windows\refint\FindowsWormsApp.dll
+C:\Users\danie\source\repos\FindowsWormsApp\FindowsWormsApp\obj\Debug\net8.0-windows\FindowsWormsApp.pdb
+C:\Users\danie\source\repos\FindowsWormsApp\FindowsWormsApp\obj\Debug\net8.0-windows\FindowsWormsApp.genruntimeconfig.cache
+C:\Users\danie\source\repos\FindowsWormsApp\FindowsWormsApp\obj\Debug\net8.0-windows\ref\FindowsWormsApp.dll
