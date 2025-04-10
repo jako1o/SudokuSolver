@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SudokuSolverConsole
+namespace FindowsWormsApp.Logic
 {
     internal class SudokuSolver
     {
@@ -110,7 +110,7 @@ namespace SudokuSolverConsole
             return true; //Gib true aus, wenn kein Fehler gefunden wurde
         }
 
-        
+
 
     }
 }

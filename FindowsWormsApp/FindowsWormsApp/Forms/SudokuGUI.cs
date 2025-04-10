@@ -1,15 +1,15 @@
 using System;
 using System.Drawing;
 using System.Windows.Forms;
-using SudokuSolverConsole;
+using FindowsWormsApp.Logic;
+using FindowsWormsApp.Helpers;
 
 
-
-namespace DataGridViewSoduko
+namespace FindowsWormsApp.Forms
 {
     public class SudokuGUI : Form
     {
-        private DataGridView dataGridView;
+        private DataGridView? dataGridView = null;
         private Button solveButton;
         private Button resetButton;
         private uint[,] InputArray;
@@ -22,9 +22,9 @@ namespace DataGridViewSoduko
         }
         private void InitializeComponents()
         {
-            this.Text = "Sudoku Solver"; // Fenstername
-            this.FormBorderStyle = FormBorderStyle.FixedDialog; // Verhindert Größenanpassung
-            this.Size = new Size(550, 600); // Festgelegte Fenstergröße
+            Text = "Sudoku Solver"; // Fenstername
+            FormBorderStyle = FormBorderStyle.FixedDialog; // Verhindert Größenanpassung
+            Size = new Size(550, 600); // Festgelegte Fenstergröße
 
             dataGridView = new DataGridView
             {
@@ -83,9 +83,9 @@ namespace DataGridViewSoduko
             resetButton.Click += ResetButton_Click; // Event-Handler für Klick
 
             // Hinzufügen der Komponenten zum Formular
-            this.Controls.Add(dataGridView);
-            this.Controls.Add(solveButton);
-            this.Controls.Add(resetButton);
+            Controls.Add(dataGridView);
+            Controls.Add(solveButton);
+            Controls.Add(resetButton);
         }
 
         private void DrawSudokuGrid(object sender, DataGridViewCellPaintingEventArgs e)
@@ -115,63 +115,26 @@ namespace DataGridViewSoduko
 
         private void ResetButton_Click(object sender, EventArgs e)
         {
-            foreach (DataGridViewRow row in dataGridView.Rows)
-            {
-                foreach (DataGridViewCell cell in row.Cells)
-                {
-                    cell.Value = ""; // Löscht den Inhalt der Zelle
-                }
-            }
+            GridHelper.ResetGrid(dataGridView);
         }
 
         private void SolveButton_Click(object sender, EventArgs e)
         {
-            uint[,] inputGrid = new uint[9, 9]; // 2D-Array für Sudoku-Daten
-
-            for (int row = 0; row < 9; row++)
+            uint[,] inputGrid = GridHelper.GetInputGrid(dataGridView); //Daten aus Datagrid einlesen
+            uint[,] backupGrid = GridHelper.CopyGrid(inputGrid); //Grid kopieren um im Fehlerfall wieder rein zu schreiben
+            uint[,] solvedGrid = GridHelper.SolveGrid(inputGrid); //an Solver übergeben
+            if (solvedGrid ==null)
             {
-                for (int col = 0; col < 9; col++)
-                {
-                    // Validiert die Zelle und speichert ihre Werte im Array
-                    if (dataGridView.Rows[row].Cells[col].Value != null &&
-                       uint.TryParse(dataGridView.Rows[row].Cells[col].Value.ToString(), out uint number))
-                    {
-                        inputGrid[row, col] = number;
-                    }
-                    else
-                    {
-                        inputGrid[row, col] = 0; // Ungültige oder leere Werte auf 0 setzen
-                    }
-                }
+            GridHelper.LoadArrayToGrid(dataGridView, backupGrid); //Falls Fehler, schreibe das ursprüngliche wieder rein
             }
-
-            uint[,] outputGrid = SolveGrid(inputGrid);
-
-            //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-            //HIer dann output in das Datagrid view reinböllern
-        }
-
-        public uint[,] GetGrid() //Getter zur Übergabe an Solver
-        {
-            return InputArray;
-        }
-
-        public uint[,] SolveGrid(uint[,] grid)
-        {
-            SudokuGrid ToSolveGrid = new SudokuGrid();
-            ToSolveGrid.CreateGrid(grid);                                   
-
-            SudokuSolver Solver = new SudokuSolver(ToSolveGrid);
-
-            if (Solver.Solve())
+            else
             {
-                uint[,] temp = ToSolveGrid.GetGrid();
-                return temp;
+            GridHelper.LoadArrayToGrid(dataGridView, solvedGrid);  //Lösung schreiben
             }
-
-            return new uint[9,9];
-
         }
+        
+
+        
 
         [STAThread]
         private static void Main()

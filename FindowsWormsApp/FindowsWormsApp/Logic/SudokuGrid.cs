@@ -5,8 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using static System.Runtime.InteropServices.JavaScript.JSType;
+using FindowsWormsApp.Enums;
 
-namespace SudokuSolverConsole
+namespace FindowsWormsApp.Logic
 {
     internal class SudokuGrid
     {
@@ -15,6 +16,7 @@ namespace SudokuSolverConsole
         protected uint[,] grid; //Array mit dem gearbeitet wird
         protected uint[,] originalGrid; //Variable, um ursprünglichen Zustand zu speichern
         protected bool[,] isGiven; //Struktur, die speichert ob Zahl vorher schon gegeben war, um diese dann später rot auszugeben
+
 
         //Konstruktor
         public SudokuGrid()
@@ -27,15 +29,15 @@ namespace SudokuSolverConsole
 
         //Methoden
 
-        
-        public bool CreateGrid(uint[,] gr)  //Neues Grid erzeugen Methode
+
+        public ErrorCode CreateGrid(uint[,] gr)  //Neues Grid erzeugen Methode
         {
             //Überprüfen, ob eingegebenes Array die richtige Größe hat
             if (gr.GetLength(0) != 9 || gr.GetLength(1) != 9)
             {
-               // Console.WriteLine("Das eingegebene Raster hat nicht die erforderliche Größe (9x9).");
+                // Console.WriteLine("Das eingegebene Raster hat nicht die erforderliche Größe (9x9).");
                 grid = new uint[9, 9]; // Rückgabe eines leeren 9x9-Arrays
-                return false;
+                return ErrorCode.Size;
             }
 
             //Zahlen auf Gültigkeit prüfen (0-9 erlaubt)
@@ -45,9 +47,9 @@ namespace SudokuSolverConsole
                 {
                     if (gr[i, j] > 9)
                     {
-                       // Console.WriteLine("Das eingegebene Raster enthält ungültige Zahlen.");
+                        // Console.WriteLine("Das eingegebene Raster enthält ungültige Zahlen.");
                         grid = new uint[9, 9]; //Rückgabe eines leeren 9x9-Arrays
-                        return false;
+                        return ErrorCode.NumbersInvalid;
                     }
                 }
             }
@@ -61,14 +63,14 @@ namespace SudokuSolverConsole
                     empty = false;
                 }
             }
-            if (empty) return false;
+            if (empty) return ErrorCode.Empty;
 
 
 
             //Console.WriteLine("Ein neues Raster wurde erfolgreich erstellt.");
             grid = gr; //Neues Raster in Klassenvariable schreiben
 
-            originalGrid = CopyGrid(grid); //nach dem erzeugen wird hier der Ursprungszustand gespeichert
+           
 
             for (int i = 0; i < 9; i++) //Markiert gegebene Zahlen in der isGiven Struktur mit true
             {
@@ -81,9 +83,9 @@ namespace SudokuSolverConsole
                 }
             }
 
-            return true; //Gibt true zurück wenn erstellen erfolgreich
+            return ErrorCode.InputValid; //Gibt true zurück wenn erstellen erfolgreich
         }
-                      
+
 
         public uint[,] GetGrid() //Getter um von Solve drauf zuzugreifen
         {
@@ -95,19 +97,6 @@ namespace SudokuSolverConsole
             return originalGrid;
         }
 
-        private uint[,] CopyGrid(uint[,] source) //Methode um Grid zu kopieren, da sonst immer die Referenz übergeben wird
-        {
-            uint[,] copy = new uint[source.GetLength(0), source.GetLength(1)];
-
-            for (uint i = 0; i < source.GetLength(0); i++)
-            {
-                for (uint j = 0; j < source.GetLength(1); j++)
-                {
-                    copy[i, j] = source[i, j];
-                }
-            }
-
-            return copy;
-        }
+        
     }
 }

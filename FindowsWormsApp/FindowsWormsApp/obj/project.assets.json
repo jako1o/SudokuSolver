@@ -8,19 +8,19 @@
     "net8.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\danie\\.nuget\\packages\\": {}
+    "C:\\Users\\jakob.stoye\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\danie\\OneDrive\\Dokumente\\GitHub\\SudokuSolver\\FindowsWormsApp\\FindowsWormsApp\\FindowsWormsApp.csproj",
+      "projectUniqueName": "C:\\Users\\jakob.stoye\\Documents\\GitHub\\SudokuSolver\\FindowsWormsApp\\FindowsWormsApp\\FindowsWormsApp.csproj",
       "projectName": "FindowsWormsApp",
-      "projectPath": "C:\\Users\\danie\\OneDrive\\Dokumente\\GitHub\\SudokuSolver\\FindowsWormsApp\\FindowsWormsApp\\FindowsWormsApp.csproj",
-      "packagesPath": "C:\\Users\\danie\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\danie\\OneDrive\\Dokumente\\GitHub\\SudokuSolver\\FindowsWormsApp\\FindowsWormsApp\\obj\\",
+      "projectPath": "C:\\Users\\jakob.stoye\\Documents\\GitHub\\SudokuSolver\\FindowsWormsApp\\FindowsWormsApp\\FindowsWormsApp.csproj",
+      "packagesPath": "C:\\Users\\jakob.stoye\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jakob.stoye\\Documents\\GitHub\\SudokuSolver\\FindowsWormsApp\\FindowsWormsApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\danie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jakob.stoye\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
