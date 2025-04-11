@@ -12,6 +12,7 @@ namespace FindowsWormsApp.Forms
         private DataGridView? dataGridView = null;
         private Button solveButton;
         private Button resetButton;
+        private Button loadExampleButton;
         private uint[,] InputArray;
 
 
@@ -44,6 +45,8 @@ namespace FindowsWormsApp.Forms
             dataGridView.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter; // Zentriert
             dataGridView.DefaultCellStyle.BackColor = Color.White; // Hintergrundfarbe
             dataGridView.DefaultCellStyle.ForeColor = Color.DarkRed; // Schriftfarbe
+
+           
 
             // 3x3-Gitterlinien
             dataGridView.CellPainting += DrawSudokuGrid;
@@ -82,10 +85,20 @@ namespace FindowsWormsApp.Forms
             };
             resetButton.Click += ResetButton_Click; // Event-Handler für Klick
 
+            // Konfiguration des "Beispiel laden"-Buttons
+            loadExampleButton = new Button
+            {
+                Text = "Beispiel laden", // Beschriftung des Buttons
+                Location = new Point(200, 520), // Position des Buttons
+                Size = new Size(120, 30) // Größe des Buttons
+            };
+            loadExampleButton.Click += LoadExampleButton_Click; // Event-Handler für Klick
+
             // Hinzufügen der Komponenten zum Formular
             Controls.Add(dataGridView);
             Controls.Add(solveButton);
             Controls.Add(resetButton);
+            Controls.Add(loadExampleButton);
         }
 
         private void DrawSudokuGrid(object sender, DataGridViewCellPaintingEventArgs e)
@@ -120,21 +133,74 @@ namespace FindowsWormsApp.Forms
 
         private void SolveButton_Click(object sender, EventArgs e)
         {
-            uint[,] inputGrid = GridHelper.GetInputGrid(dataGridView); //Daten aus Datagrid einlesen
-            uint[,] backupGrid = GridHelper.CopyGrid(inputGrid); //Grid kopieren um im Fehlerfall wieder rein zu schreiben
-            uint[,] solvedGrid = GridHelper.SolveGrid(inputGrid); //an Solver übergeben
-            if (solvedGrid ==null)
+            uint[,] inputGrid = GridHelper.GetInputGrid(dataGridView); // Daten aus dem DataGrid einlesen
+            uint[,] backupGrid = GridHelper.CopyGrid(inputGrid); // Grid kopieren, um es im Fehlerfall wiederherzustellen
+
+            // Rufe SolveGrid auf und erhalte das SudokuGrid-Objekt zurück
+            SudokuGrid solvedGrid = GridHelper.SolveGrid(inputGrid);
+
+            if (solvedGrid == null)
             {
-            GridHelper.LoadArrayToGrid(dataGridView, backupGrid); //Falls Fehler, schreibe das ursprüngliche wieder rein
+                // Wenn das Sudoku nicht gelöst werden konnte, lade das Backup zurück
+                GridHelper.LoadArrayToGrid(dataGridView, backupGrid);
             }
             else
             {
-            GridHelper.LoadArrayToGrid(dataGridView, solvedGrid);  //Lösung schreiben
+                // Lade die Lösung ins Grid
+                GridHelper.LoadArrayToGrid(dataGridView, solvedGrid.GetGrid());
+
+                // Färbe die Zellen basierend auf den gegebenen Zahlen ein
+                HighlightGivenNumbers(solvedGrid); // Übergib das gelöste SudokuGrid an die Highlight-Methode
             }
         }
-        
 
-        
+        private void LoadExampleButton_Click(object sender, EventArgs e)
+        {
+            // Hier wird der Code ausgeführt, um das Beispiel zu laden
+            GridHelper.LoadExampleSudoku(dataGridView); // Beispiel laden
+        }
+
+
+        private void HighlightGivenNumbers(SudokuGrid sudokuGrid)
+        {
+            bool[,] isGiven = sudokuGrid.GetGivenStatus(); // Hole das isGiven-Array von SudokuGrid
+
+            for (int row = 0; row < 9; row++)
+            {
+                for (int col = 0; col < 9; col++)
+                {
+                    // Hole den Wert der Zelle sicher
+                    object cellValue = dataGridView.Rows[row].Cells[col].Value;
+                    uint value = 0;
+
+                    // Versuche den Wert der Zelle in uint zu konvertieren
+                    if (cellValue != null && uint.TryParse(cellValue.ToString(), out value))
+                    {
+                        // Wenn die Zahl gegeben ist, markiere sie anders
+                        if (isGiven[row, col])
+                        {
+                            dataGridView.Rows[row].Cells[col].Style.BackColor = Color.LightBlue;  // Hintergrundfarbe für gegebene Zellen
+                            dataGridView.Rows[row].Cells[col].Style.ForeColor = Color.Black;     // Schriftfarbe für gegebene Zellen
+                        }
+                        else
+                        {
+                            dataGridView.Rows[row].Cells[col].Style.BackColor = Color.LightGreen; // Hintergrundfarbe für gelöste Zellen
+                            dataGridView.Rows[row].Cells[col].Style.ForeColor = Color.Black;     // Schriftfarbe für gelöste Zellen
+                        }
+                    }
+                    else
+                    {
+                        // Falls der Wert nicht konvertierbar ist, setze die Zellenfarbe auf Weiß (oder eine andere Standardfarbe)
+                        dataGridView.Rows[row].Cells[col].Style.BackColor = Color.White;
+                        dataGridView.Rows[row].Cells[col].Style.ForeColor = Color.Black;
+                    }
+                }
+            }
+        }
+
+
+
+
 
         [STAThread]
         private static void Main()

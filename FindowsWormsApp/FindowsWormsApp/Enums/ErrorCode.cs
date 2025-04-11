@@ -12,6 +12,7 @@ namespace FindowsWormsApp.Enums
         NumbersInvalid,
         Empty,
         Impossible,
-        Size
+        Size,
+        InputInvalid
     }
 }

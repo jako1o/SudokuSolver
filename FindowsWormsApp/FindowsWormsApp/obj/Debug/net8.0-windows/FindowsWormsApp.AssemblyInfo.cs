@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FindowsWormsApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4edc2167c8af9949e1de33422210c33196cc05d1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+63b7bfebb2c48cd7a68120dedf81b6e03fb995bf")]
 [assembly: System.Reflection.AssemblyProductAttribute("FindowsWormsApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FindowsWormsApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

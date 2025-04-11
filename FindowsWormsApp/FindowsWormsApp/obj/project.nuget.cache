@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lUWj2rr/m4QN2Cs1TqycCCdsEWFvYuX1QVVaUT/WEZDzgVgK+I9j5eTUgEvDPig4EdJ258yerVeQudvoZMW/Fw==",
+  "dgSpecHash": "FeB8WAiNRI8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\jakob.stoye\\Documents\\GitHub\\SudokuSolver\\FindowsWormsApp\\FindowsWormsApp\\FindowsWormsApp.csproj",
+  "projectFilePath": "C:\\Users\\jakob.stoye\\Desktop\\git\\SudokuSolver\\FindowsWormsApp\\FindowsWormsApp\\FindowsWormsApp.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -34,7 +34,7 @@ namespace FindowsWormsApp.Helpers
             return inputGrid;
         }
 
-        public static uint[,]? SolveGrid(uint[,] grid)   //Methode um Solver zu instanzieren und Eingaben zu übergeben
+        public static SudokuGrid? SolveGrid(uint[,] grid)   //Methode um Solver zu instanzieren und Eingaben zu übergeben
         {
             SudokuGrid ToSolveGrid = new SudokuGrid();
             ErrorCode result = ToSolveGrid.CreateGrid(grid);
@@ -45,11 +45,14 @@ namespace FindowsWormsApp.Helpers
 
                 if (Solver.Solve())
                 {
-                    uint[,] temp = ToSolveGrid.GetGrid();
-                    return temp;
+                    return ToSolveGrid.GetGridObject();
+                    
                 }
-                return null;
-                
+                {
+                    MessageBox.Show("Keine Lösung gefunden – Solver.Solve() == false");
+                    return null;
+                }
+
             }
             else if (result == ErrorCode.Size)
             {
@@ -65,6 +68,10 @@ namespace FindowsWormsApp.Helpers
             {
                 MessageBox.Show("Die Eingabe enthält unzulässige Zahlen (nur 1-9)");
                 return null;
+            }
+            else if (result == ErrorCode.InputInvalid)
+            {  
+                return null; 
             }
             else
             {
@@ -94,6 +101,16 @@ namespace FindowsWormsApp.Helpers
                 }
             }
 
+            // Durchlaufe alle Zellen im DataGridView und setze die Hintergrundfarbe auf Weiß
+            for (int row = 0; row < 9; row++)
+            {
+                for (int col = 0; col < 9; col++)
+                {
+                    dgv.Rows[row].Cells[col].Style.BackColor = Color.White;
+                    dgv.Rows[row].Cells[col].Style.ForeColor = Color.Black; // Optional: Schriftfarbe auf Schwarz setzen
+                }
+            }
+
         }
 
         public static uint[,] CopyGrid(uint[,] source) //Methode um Grid zu kopieren, da sonst immer die Referenz übergeben wird
@@ -109,6 +126,18 @@ namespace FindowsWormsApp.Helpers
             }
 
             return copy;
+        }
+
+        public static void LoadExampleSudoku(DataGridView dgv)
+        {
+            // Zufälliges Sudoku aus der Liste auswählen
+            Random rand = new Random();
+            int randomIndex = rand.Next(SudokuTestData.Examples.Count); // Wählt zufällig einen Index aus der Liste
+
+            uint[,] selectedSudoku = SudokuTestData.Examples[randomIndex]; // Das zufällig ausgewählte Sudoku
+
+            LoadArrayToGrid(dgv, selectedSudoku);
+
         }
     }
 }
