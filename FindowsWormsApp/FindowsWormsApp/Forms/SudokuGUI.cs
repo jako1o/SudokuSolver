@@ -27,18 +27,31 @@ namespace FindowsWormsApp.Forms
             FormBorderStyle = FormBorderStyle.FixedDialog; // Verhindert Größenanpassung
             Size = new Size(550, 600); // Festgelegte Fenstergröße
 
+            
             dataGridView = new DataGridView
             {
-                ColumnCount = 9, // 9 Spalten für Sudoku
-                RowHeadersVisible = false, // Keine Zeilenköpfe
-                ColumnHeadersVisible = false, // Keine Spaltenköpfe
-                AllowUserToAddRows = false, // Keine zusätzliche Zeile hinzufügen
-                AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None, // Feste Spaltenbreite
-                AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.None, // Feste Zeilenhöhe
-                ScrollBars = ScrollBars.None, // Scrollbars deaktivieren
-                Size = new Size(453, 453), // Größe des Sudoku-Feldes
-                Location = new Point(40, 50) // Position des Sudoku-Feldes
+                ColumnCount = 9,
+                RowHeadersVisible = false,
+                ColumnHeadersVisible = false,
+                AllowUserToAddRows = false,
+                AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None,
+                AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.None,
+                ScrollBars = ScrollBars.None,
+                Size = new Size(453, 453),
+                Location = new Point(40, 50),
+                AllowUserToResizeColumns = false,
+                AllowUserToResizeRows = false,
+                RowTemplate = { Height = 50 }
             };
+
+            // Spaltenbreite fix setzen
+            foreach (DataGridViewColumn col in dataGridView.Columns)
+            {
+                col.Width = 50;
+            }
+
+           
+
 
             // Anpassung des Zellenstils
             dataGridView.DefaultCellStyle.Font = new Font("Arial", 20, FontStyle.Bold); // Schrift fett und größer
@@ -89,7 +102,7 @@ namespace FindowsWormsApp.Forms
             loadExampleButton = new Button
             {
                 Text = "Beispiel laden", // Beschriftung des Buttons
-                Location = new Point(200, 520), // Position des Buttons
+                Location = new Point(205, 520), // Position des Buttons
                 Size = new Size(120, 30) // Größe des Buttons
             };
             loadExampleButton.Click += LoadExampleButton_Click; // Event-Handler für Klick
@@ -99,6 +112,10 @@ namespace FindowsWormsApp.Forms
             Controls.Add(solveButton);
             Controls.Add(resetButton);
             Controls.Add(loadExampleButton);
+
+           
+
+
         }
 
         private void DrawSudokuGrid(object sender, DataGridViewCellPaintingEventArgs e)
@@ -179,12 +196,12 @@ namespace FindowsWormsApp.Forms
                         // Wenn die Zahl gegeben ist, markiere sie anders
                         if (isGiven[row, col])
                         {
-                            dataGridView.Rows[row].Cells[col].Style.BackColor = Color.LightBlue;  // Hintergrundfarbe für gegebene Zellen
+                            dataGridView.Rows[row].Cells[col].Style.BackColor = Color.Gainsboro;  // Hintergrundfarbe für gegebene Zellen
                             dataGridView.Rows[row].Cells[col].Style.ForeColor = Color.Black;     // Schriftfarbe für gegebene Zellen
                         }
                         else
                         {
-                            dataGridView.Rows[row].Cells[col].Style.BackColor = Color.LightGreen; // Hintergrundfarbe für gelöste Zellen
+                            dataGridView.Rows[row].Cells[col].Style.BackColor = Color.White; // Hintergrundfarbe für gelöste Zellen
                             dataGridView.Rows[row].Cells[col].Style.ForeColor = Color.Black;     // Schriftfarbe für gelöste Zellen
                         }
                     }

@@ -107,7 +107,7 @@ namespace FindowsWormsApp.Helpers
                 for (int col = 0; col < 9; col++)
                 {
                     dgv.Rows[row].Cells[col].Style.BackColor = Color.White;
-                    dgv.Rows[row].Cells[col].Style.ForeColor = Color.Black; // Optional: Schriftfarbe auf Schwarz setzen
+                    dgv.Rows[row].Cells[col].Style.ForeColor = Color.Black;
                 }
             }
 
@@ -130,13 +130,14 @@ namespace FindowsWormsApp.Helpers
 
         public static void LoadExampleSudoku(DataGridView dgv)
         {
-            // Zufälliges Sudoku aus der Liste auswählen
+            ResetGrid(dgv);
+            //Zufälliges wählen aus Liste
             Random rand = new Random();
-            int randomIndex = rand.Next(SudokuTestData.Examples.Count); // Wählt zufällig einen Index aus der Liste
+            int randomIndex = rand.Next(SudokuTestData.Examples.Count);
 
-            uint[,] selectedSudoku = SudokuTestData.Examples[randomIndex]; // Das zufällig ausgewählte Sudoku
+            uint[,] selectedSudoku = SudokuTestData.Examples[randomIndex];
 
-            LoadArrayToGrid(dgv, selectedSudoku);
+            LoadArrayToGrid(dgv, selectedSudoku); //ZUfällis Sudoku ins Grid laden
 
         }
     }

@@ -3,32 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\jakob.stoye\\Desktop\\git\\SudokuSolver\\FindowsWormsApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C14F555D-0795-4A28-B7A4-509E2DD41311}|FindowsWormsApp\\FindowsWormsApp.csproj|c:\\users\\jakob.stoye\\desktop\\git\\sudokusolver\\findowswormsapp\\findowswormsapp\\helpers\\gridhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C14F555D-0795-4A28-B7A4-509E2DD41311}|FindowsWormsApp\\FindowsWormsApp.csproj|solutionrelative:findowswormsapp\\helpers\\gridhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C14F555D-0795-4A28-B7A4-509E2DD41311}|FindowsWormsApp\\FindowsWormsApp.csproj|c:\\users\\jakob.stoye\\desktop\\git\\sudokusolver\\findowswormsapp\\findowswormsapp\\forms\\sudokugui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C14F555D-0795-4A28-B7A4-509E2DD41311}|FindowsWormsApp\\FindowsWormsApp.csproj|solutionrelative:findowswormsapp\\forms\\sudokugui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C14F555D-0795-4A28-B7A4-509E2DD41311}|FindowsWormsApp\\FindowsWormsApp.csproj|c:\\users\\jakob.stoye\\desktop\\git\\sudokusolver\\findowswormsapp\\findowswormsapp\\logic\\sudoku solver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C14F555D-0795-4A28-B7A4-509E2DD41311}|FindowsWormsApp\\FindowsWormsApp.csproj|solutionrelative:findowswormsapp\\logic\\sudoku solver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C14F555D-0795-4A28-B7A4-509E2DD41311}|FindowsWormsApp\\FindowsWormsApp.csproj|c:\\users\\jakob.stoye\\desktop\\git\\sudokusolver\\findowswormsapp\\findowswormsapp\\logic\\sudokugrid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C14F555D-0795-4A28-B7A4-509E2DD41311}|FindowsWormsApp\\FindowsWormsApp.csproj|solutionrelative:findowswormsapp\\logic\\sudokugrid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C14F555D-0795-4A28-B7A4-509E2DD41311}|FindowsWormsApp\\FindowsWormsApp.csproj|c:\\users\\jakob.stoye\\desktop\\git\\sudokusolver\\findowswormsapp\\findowswormsapp\\enums\\errorcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C14F555D-0795-4A28-B7A4-509E2DD41311}|FindowsWormsApp\\FindowsWormsApp.csproj|solutionrelative:findowswormsapp\\enums\\errorcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C14F555D-0795-4A28-B7A4-509E2DD41311}|FindowsWormsApp\\FindowsWormsApp.csproj|c:\\users\\jakob.stoye\\desktop\\git\\sudokusolver\\findowswormsapp\\findowswormsapp\\findowswormsapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C14F555D-0795-4A28-B7A4-509E2DD41311}|FindowsWormsApp\\FindowsWormsApp.csproj|solutionrelative:findowswormsapp\\findowswormsapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C14F555D-0795-4A28-B7A4-509E2DD41311}|FindowsWormsApp\\FindowsWormsApp.csproj|c:\\users\\jakob.stoye\\desktop\\git\\sudokusolver\\findowswormsapp\\findowswormsapp\\helpers\\sudokutestdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C14F555D-0795-4A28-B7A4-509E2DD41311}|FindowsWormsApp\\FindowsWormsApp.csproj|solutionrelative:findowswormsapp\\helpers\\sudokutestdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C14F555D-0795-4A28-B7A4-509E2DD41311}|FindowsWormsApp\\FindowsWormsApp.csproj|c:\\users\\jakob.stoye\\desktop\\git\\sudokusolver\\findowswormsapp\\findowswormsapp\\findowswormsapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{C14F555D-0795-4A28-B7A4-509E2DD41311}|FindowsWormsApp\\FindowsWormsApp.csproj|solutionrelative:findowswormsapp\\findowswormsapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{C14F555D-0795-4A28-B7A4-509E2DD41311}|FindowsWormsApp\\FindowsWormsApp.csproj|c:\\users\\jakob.stoye\\desktop\\git\\sudokusolver\\findowswormsapp\\findowswormsapp\\forms\\sudokugui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C14F555D-0795-4A28-B7A4-509E2DD41311}|FindowsWormsApp\\FindowsWormsApp.csproj|solutionrelative:findowswormsapp\\forms\\sudokugui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C14F555D-0795-4A28-B7A4-509E2DD41311}|FindowsWormsApp\\FindowsWormsApp.csproj|c:\\users\\jakob.stoye\\desktop\\git\\sudokusolver\\findowswormsapp\\findowswormsapp\\logic\\sudokugrid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C14F555D-0795-4A28-B7A4-509E2DD41311}|FindowsWormsApp\\FindowsWormsApp.csproj|solutionrelative:findowswormsapp\\logic\\sudokugrid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C14F555D-0795-4A28-B7A4-509E2DD41311}|FindowsWormsApp\\FindowsWormsApp.csproj|c:\\users\\jakob.stoye\\desktop\\git\\sudokusolver\\findowswormsapp\\findowswormsapp\\helpers\\gridhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C14F555D-0795-4A28-B7A4-509E2DD41311}|FindowsWormsApp\\FindowsWormsApp.csproj|solutionrelative:findowswormsapp\\helpers\\gridhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C14F555D-0795-4A28-B7A4-509E2DD41311}|FindowsWormsApp\\FindowsWormsApp.csproj|c:\\users\\jakob.stoye\\desktop\\git\\sudokusolver\\findowswormsapp\\findowswormsapp\\enums\\errorcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C14F555D-0795-4A28-B7A4-509E2DD41311}|FindowsWormsApp\\FindowsWormsApp.csproj|solutionrelative:findowswormsapp\\enums\\errorcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,17 +38,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "SudokuGrid.cs",
               "DocumentMoniker": "C:\\Users\\jakob.stoye\\Desktop\\git\\SudokuSolver\\FindowsWormsApp\\FindowsWormsApp\\Logic\\SudokuGrid.cs",
               "RelativeDocumentMoniker": "FindowsWormsApp\\Logic\\SudokuGrid.cs",
               "ToolTip": "C:\\Users\\jakob.stoye\\Desktop\\git\\SudokuSolver\\FindowsWormsApp\\FindowsWormsApp\\Logic\\SudokuGrid.cs",
               "RelativeToolTip": "FindowsWormsApp\\Logic\\SudokuGrid.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAQwAoAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAgwEMAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-03T16:21:38.306Z",
               "IsPinned": true,
@@ -56,46 +56,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "SudokuTestData.cs",
               "DocumentMoniker": "C:\\Users\\jakob.stoye\\Desktop\\git\\SudokuSolver\\FindowsWormsApp\\FindowsWormsApp\\Helpers\\SudokuTestData.cs",
               "RelativeDocumentMoniker": "FindowsWormsApp\\Helpers\\SudokuTestData.cs",
               "ToolTip": "C:\\Users\\jakob.stoye\\Desktop\\git\\SudokuSolver\\FindowsWormsApp\\FindowsWormsApp\\Helpers\\SudokuTestData.cs",
               "RelativeToolTip": "FindowsWormsApp\\Helpers\\SudokuTestData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEgAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAADIAAAAAAAAAAAAQwE4AAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-11T12:09:50.092Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "ErrorCode.cs",
               "DocumentMoniker": "C:\\Users\\jakob.stoye\\Desktop\\git\\SudokuSolver\\FindowsWormsApp\\FindowsWormsApp\\Enums\\ErrorCode.cs",
               "RelativeDocumentMoniker": "FindowsWormsApp\\Enums\\ErrorCode.cs",
               "ToolTip": "C:\\Users\\jakob.stoye\\Desktop\\git\\SudokuSolver\\FindowsWormsApp\\FindowsWormsApp\\Enums\\ErrorCode.cs",
               "RelativeToolTip": "FindowsWormsApp\\Enums\\ErrorCode.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-10T15:57:11.603Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "GridHelper.cs",
               "DocumentMoniker": "C:\\Users\\jakob.stoye\\Desktop\\git\\SudokuSolver\\FindowsWormsApp\\FindowsWormsApp\\Helpers\\GridHelper.cs",
               "RelativeDocumentMoniker": "FindowsWormsApp\\Helpers\\GridHelper.cs",
               "ToolTip": "C:\\Users\\jakob.stoye\\Desktop\\git\\SudokuSolver\\FindowsWormsApp\\FindowsWormsApp\\Helpers\\GridHelper.cs",
               "RelativeToolTip": "FindowsWormsApp\\Helpers\\GridHelper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEkAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-10T15:22:07.817Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "FindowsWormsApp.csproj",
               "DocumentMoniker": "C:\\Users\\jakob.stoye\\Desktop\\git\\SudokuSolver\\FindowsWormsApp\\FindowsWormsApp\\FindowsWormsApp.csproj",
               "RelativeDocumentMoniker": "FindowsWormsApp\\FindowsWormsApp.csproj",
@@ -108,26 +108,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Sudoku Solver.cs",
               "DocumentMoniker": "C:\\Users\\jakob.stoye\\Desktop\\git\\SudokuSolver\\FindowsWormsApp\\FindowsWormsApp\\Logic\\Sudoku Solver.cs",
               "RelativeDocumentMoniker": "FindowsWormsApp\\Logic\\Sudoku Solver.cs",
               "ToolTip": "C:\\Users\\jakob.stoye\\Desktop\\git\\SudokuSolver\\FindowsWormsApp\\FindowsWormsApp\\Logic\\Sudoku Solver.cs",
               "RelativeToolTip": "FindowsWormsApp\\Logic\\Sudoku Solver.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAkwDUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-03T15:39:37.594Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "SudokuGUI.cs",
               "DocumentMoniker": "C:\\Users\\jakob.stoye\\Desktop\\git\\SudokuSolver\\FindowsWormsApp\\FindowsWormsApp\\Forms\\SudokuGUI.cs",
               "RelativeDocumentMoniker": "FindowsWormsApp\\Forms\\SudokuGUI.cs",
               "ToolTip": "C:\\Users\\jakob.stoye\\Desktop\\git\\SudokuSolver\\FindowsWormsApp\\FindowsWormsApp\\Forms\\SudokuGUI.cs",
               "RelativeToolTip": "FindowsWormsApp\\Forms\\SudokuGUI.cs",
-              "ViewState": "AgIAAH8AAAAAAAAAAAAmwKwAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAALQAAAAAAAAAAAA6wHMAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-03T15:21:10.012Z",
               "EditorCaption": ""
