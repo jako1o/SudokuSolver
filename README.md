@@ -38,24 +38,16 @@ SudokuSolverForms
 
 ## ▶️ Verwendung
 
-1. Projekt in Visual Studio öffnen
-2. Build-Konfiguration auf `Release` setzen
-3. Erstellen mit `Strg + Umschalt + B`
-4. Starten mit `F5` oder `Start`-Button
+1. App herunterladen ➡️ [Download aktuelle Version (ZIP)](https://github.com/deinname/SudokuSolverForms/releases)
+2. Zip entpacken - die App muss nicht installiert werden - lediglich das .NET Framework muss installiert sein
+3. zu lösendes Sudoku eingeben - Lösen klicken - fertig!
+4. optional kann über den Button "Besipiel laden" ein solches geladen werden, um die Funktion zu testen
 
 ---
 
-## 📦 Veröffentlichung
+## 💡 Beispiel-Screenshots 
 
-Wenn du eine `.exe` erstellen möchtest:
-- Im Menü: `Build > Projektmappe veröffentlichen`
-- Oder über `dotnet publish` für eine self-contained Version
 
----
-
-## 💡 Beispiel-Screenshots oder GIFs (optional)
-
-*(Hier kannst du später Bilder deiner App einfügen)*
 
 ---
 
