@@ -1,0 +1,2 @@
+C:\Users\jakob\Documents\GitHub\SudokuSolver\SudokuSolverForms\SudokuSolverForms\bin\Release\net8.0-windows\publish\win-x64\SudokuSolverForms.pdb
+C:\Users\jakob\Documents\GitHub\SudokuSolver\SudokuSolverForms\SudokuSolverForms\bin\Release\net8.0-windows\publish\win-x64\SudokuSolverForms.exe

@@ -8,9 +8,8 @@ Ursprünglich wurde der Lösungsalgorithmus in einer **Konsolenanwendung** entwi
 ## 🔧 Features
 
 - Sudoku-Rätsel eingeben und automatisch lösen
-- Manuelles Zurücksetzen des Gitters
+- Laden von Beispielen zum Test
 - 9×9 Gitteranzeige über `DataGridView`
-- Visualisierung der 3×3 Blöcke durch zusätzliche Zelllinien
 - Eingetragene Zahlen können visuell unterschieden werden
 - Fehlerbehandlung und Hilfsklassen strukturiert gekapselt
 
