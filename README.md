@@ -42,7 +42,16 @@ SudokuSolverForms
 2. Zip entpacken - die App muss nicht installiert werden - lediglich das .NET Framework muss installiert sein
 3. zu lösendes Sudoku eingeben - Lösen klicken - fertig!
 4. optional kann über den Button "Besipiel laden" ein solches geladen werden, um die Funktion zu testen
+   
+⚠️ **Hinweis zur Windows-Sicherheitsmeldung**
 
+Beim ersten Start blockiert Windows evtl. die Anwendung mit folgender Meldung:
+
+> *„Der Computer wurde durch Windows geschützt“*
+
+So kannst du die App trotzdem starten:
+1. Klicke auf **"Weitere Informationen"**
+2. Klicke auf **"Trotzdem ausführen"**
 
 ---
 
