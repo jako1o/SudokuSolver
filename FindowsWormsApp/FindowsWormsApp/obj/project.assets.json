@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jakob\\Documents\\GitHub\\SudokuSolver\\FindowsWormsApp\\FindowsWormsApp\\FindowsWormsApp.csproj",
-      "projectName": "FindowsWormsApp",
-      "projectPath": "C:\\Users\\jakob\\Documents\\GitHub\\SudokuSolver\\FindowsWormsApp\\FindowsWormsApp\\FindowsWormsApp.csproj",
+      "projectUniqueName": "C:\\Users\\jakob\\Documents\\GitHub\\SudokuSolver\\FindowsWormsApp\\FindowsWormsApp\\SudokuSolverForms.csproj",
+      "projectName": "SudokuSolverForms",
+      "projectPath": "C:\\Users\\jakob\\Documents\\GitHub\\SudokuSolver\\FindowsWormsApp\\FindowsWormsApp\\SudokuSolverForms.csproj",
       "packagesPath": "C:\\Users\\jakob\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\jakob\\Documents\\GitHub\\SudokuSolver\\FindowsWormsApp\\FindowsWormsApp\\obj\\",
       "projectStyle": "PackageReference",

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34701.34
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindowsWormsApp", "FindowsWormsApp\FindowsWormsApp.csproj", "{C14F555D-0795-4A28-B7A4-509E2DD41311}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SudokuSolverForms", "FindowsWormsApp\SudokuSolverForms.csproj", "{C14F555D-0795-4A28-B7A4-509E2DD41311}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -10,10 +10,10 @@ namespace FindowsWormsApp.Forms
     public class SudokuGUI : Form
     {
         private DataGridView? dataGridView = null;
-        private Button solveButton;
-        private Button resetButton;
-        private Button loadExampleButton;
-        private uint[,] InputArray;
+        private Button? solveButton;
+        private Button? resetButton;
+        private Button? loadExampleButton;
+       
 
 
         public SudokuGUI()
@@ -118,7 +118,7 @@ namespace FindowsWormsApp.Forms
 
         }
 
-        private void DrawSudokuGrid(object sender, DataGridViewCellPaintingEventArgs e)
+        private void DrawSudokuGrid(object? sender, DataGridViewCellPaintingEventArgs e)
         {
             e.Paint(e.ClipBounds, DataGridViewPaintParts.All);
 
@@ -129,13 +129,13 @@ namespace FindowsWormsApp.Forms
                     // Vertikale Linien an jeder dritten Spalte
                     if (e.ColumnIndex % 3 == 2 && e.ColumnIndex != 8)
                     {
-                        e.Graphics.DrawLine(pen, e.CellBounds.Right - 1, e.CellBounds.Top, e.CellBounds.Right - 1, e.CellBounds.Bottom);
+                        e.Graphics!.DrawLine(pen, e.CellBounds.Right - 1, e.CellBounds.Top, e.CellBounds.Right - 1, e.CellBounds.Bottom);
                     }
 
                     // Horizontale Linien an jeder dritten Zeile
                     if (e.RowIndex % 3 == 2 && e.RowIndex != 8)
                     {
-                        e.Graphics.DrawLine(pen, e.CellBounds.Left, e.CellBounds.Bottom - 1, e.CellBounds.Right, e.CellBounds.Bottom - 1);
+                        e.Graphics!.DrawLine(pen, e.CellBounds.Left, e.CellBounds.Bottom - 1, e.CellBounds.Right, e.CellBounds.Bottom - 1);
                     }
                 }
             }
@@ -143,38 +143,38 @@ namespace FindowsWormsApp.Forms
             e.Handled = true; // Verhindert Standardzeichnen
         }
 
-        private void ResetButton_Click(object sender, EventArgs e)
+        private void ResetButton_Click(object? sender, EventArgs e)
         {
-            GridHelper.ResetGrid(dataGridView);
+            GridHelper.ResetGrid(dataGridView!);
         }
 
-        private void SolveButton_Click(object sender, EventArgs e)
+        private void SolveButton_Click(object? sender, EventArgs e)
         {
-            uint[,] inputGrid = GridHelper.GetInputGrid(dataGridView); // Daten aus dem DataGrid einlesen
+            uint[,] inputGrid = GridHelper.GetInputGrid(dataGridView!); // Daten aus dem DataGrid einlesen
             uint[,] backupGrid = GridHelper.CopyGrid(inputGrid); // Grid kopieren, um es im Fehlerfall wiederherzustellen
 
             // Rufe SolveGrid auf und erhalte das SudokuGrid-Objekt zurück
-            SudokuGrid solvedGrid = GridHelper.SolveGrid(inputGrid);
+            SudokuGrid solvedGrid = GridHelper.SolveGrid(inputGrid)!;
 
             if (solvedGrid == null)
             {
                 // Wenn das Sudoku nicht gelöst werden konnte, lade das Backup zurück
-                GridHelper.LoadArrayToGrid(dataGridView, backupGrid);
+                GridHelper.LoadArrayToGrid(dataGridView!, backupGrid);
             }
             else
             {
                 // Lade die Lösung ins Grid
-                GridHelper.LoadArrayToGrid(dataGridView, solvedGrid.GetGrid());
+                GridHelper.LoadArrayToGrid(dataGridView!, solvedGrid.GetGrid());
 
                 // Färbe die Zellen basierend auf den gegebenen Zahlen ein
                 HighlightGivenNumbers(solvedGrid); // Übergib das gelöste SudokuGrid an die Highlight-Methode
             }
         }
 
-        private void LoadExampleButton_Click(object sender, EventArgs e)
+        private void LoadExampleButton_Click(object? sender, EventArgs e)
         {
             // Hier wird der Code ausgeführt, um das Beispiel zu laden
-            GridHelper.LoadExampleSudoku(dataGridView); // Beispiel laden
+            GridHelper.LoadExampleSudoku(dataGridView!); // Beispiel laden
         }
 
 
@@ -187,7 +187,7 @@ namespace FindowsWormsApp.Forms
                 for (int col = 0; col < 9; col++)
                 {
                     // Hole den Wert der Zelle sicher
-                    object cellValue = dataGridView.Rows[row].Cells[col].Value;
+                    object cellValue = dataGridView!.Rows[row].Cells[col].Value;
                     uint value = 0;
 
                     // Versuche den Wert der Zelle in uint zu konvertieren

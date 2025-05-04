@@ -11,14 +11,12 @@ namespace FindowsWormsApp.Logic
     {
         //Attribute
         private SudokuGrid SudokuGrid; //Verwende die Klasse SudokuGrid
-        private bool isSolved; //Speichert Ergebnis
-
+       
         //Konstrukor
 
         public SudokuSolver(SudokuGrid grid)
         {
-            SudokuGrid = grid; // Speichert die Instanz des SudokuGrid
-            isSolved = false;
+            SudokuGrid = grid; // Speichert die Instanz des SudokuGrid            
         }
 
         //Methoden
@@ -32,11 +30,8 @@ namespace FindowsWormsApp.Logic
             var emptyPos = FindEmptyPosition();
 
             //Kein leeres Feld, ture zurückgeben -> Sudoku gelöst
-            if (emptyPos == null)
-            {
-                isSolved = true;
-                return true;
-            }
+            if (emptyPos == null) return true;
+            
 
             uint row = emptyPos.Value.Item1; //erste Variable vom Tuple
             uint col = emptyPos.Value.Item2; //zweite...
@@ -55,7 +50,7 @@ namespace FindowsWormsApp.Logic
                 }
             }
 
-            isSolved = false;
+            
             return false; //keine Lösung gefunden
 
         }

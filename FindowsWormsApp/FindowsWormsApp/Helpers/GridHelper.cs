@@ -49,7 +49,7 @@ namespace FindowsWormsApp.Helpers
                     
                 }
                 {
-                    MessageBox.Show("Keine Lösung gefunden – Solver.Solve() == false");
+                    MessageBox.Show("Keine Lösung gefunden");
                     return null;
                 }
 
@@ -97,7 +97,7 @@ namespace FindowsWormsApp.Helpers
             {
                 foreach (DataGridViewCell cell in row.Cells)
                 {
-                    cell.Value = ""; // Löscht den Inhalt der Zelle
+                    cell.Value = "";
                 }
             }
 
