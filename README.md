@@ -38,7 +38,7 @@ SudokuSolverForms
 
 ## ▶️ Verwendung
 
-1. App herunterladen ➡️ [Download aktuelle Version (ZIP)](https://github.com/deinname/SudokuSolverForms/releases)
+1. App herunterladen ➡️ [Download aktuelle Version (ZIP)](https://github.com/jako1o/SudokuSolver/releases/latest)
 2. Zip entpacken - die App muss nicht installiert werden - lediglich das .NET Framework muss installiert sein
 3. zu lösendes Sudoku eingeben - Lösen klicken - fertig!
 4. optional kann über den Button "Besipiel laden" ein solches geladen werden, um die Funktion zu testen
