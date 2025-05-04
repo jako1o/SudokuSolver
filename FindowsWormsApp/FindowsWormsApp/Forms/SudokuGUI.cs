@@ -1,11 +1,11 @@
 using System;
 using System.Drawing;
 using System.Windows.Forms;
-using FindowsWormsApp.Logic;
-using FindowsWormsApp.Helpers;
+using SudokuSolverForms.Logic;
+using SudokuSolverForms.Helpers;
 
 
-namespace FindowsWormsApp.Forms
+namespace SudokuSolverForms.Forms
 {
     public class SudokuGUI : Form
     {

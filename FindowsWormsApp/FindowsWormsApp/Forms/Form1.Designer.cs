@@ -1,4 +1,4 @@
-﻿namespace FindowsWormsApp
+﻿namespace SudokuSolverForms
 {
     partial class Form1
     {

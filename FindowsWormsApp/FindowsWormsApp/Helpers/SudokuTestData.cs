@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FindowsWormsApp.Helpers
+namespace SudokuSolverForms.Helpers
 {
     public static class SudokuTestData
     {

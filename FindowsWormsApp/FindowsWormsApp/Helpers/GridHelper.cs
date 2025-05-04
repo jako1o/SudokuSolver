@@ -1,13 +1,13 @@
-﻿using FindowsWormsApp.Logic;
+﻿using SudokuSolverForms.Logic;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using FindowsWormsApp.Enums;
+using SudokuSolverForms.Enums;
 
-namespace FindowsWormsApp.Helpers
+namespace SudokuSolverForms.Helpers
 {
     public static class GridHelper
     {

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SudokuSolverForms")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+70508343627f72fbb5980f1c2b1fb3e033af9317")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9d6b9c0e028603e59e3bc68979e976b3ea612120")]
 [assembly: System.Reflection.AssemblyProductAttribute("SudokuSolverForms")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SudokuSolverForms")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

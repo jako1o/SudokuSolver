@@ -3,8 +3,6 @@ C:\Users\jakob\Documents\GitHub\SudokuSolver\FindowsWormsApp\FindowsWormsApp\bin
 C:\Users\jakob\Documents\GitHub\SudokuSolver\FindowsWormsApp\FindowsWormsApp\bin\Release\net8.0-windows\SudokuSolverForms.runtimeconfig.json
 C:\Users\jakob\Documents\GitHub\SudokuSolver\FindowsWormsApp\FindowsWormsApp\bin\Release\net8.0-windows\SudokuSolverForms.dll
 C:\Users\jakob\Documents\GitHub\SudokuSolver\FindowsWormsApp\FindowsWormsApp\bin\Release\net8.0-windows\SudokuSolverForms.pdb
-C:\Users\jakob\Documents\GitHub\SudokuSolver\FindowsWormsApp\FindowsWormsApp\obj\Release\net8.0-windows\FindowsWormsApp.Form1.resources
-C:\Users\jakob\Documents\GitHub\SudokuSolver\FindowsWormsApp\FindowsWormsApp\obj\Release\net8.0-windows\FindowsWormsApp.Forms.SudokuGUI.resources
 C:\Users\jakob\Documents\GitHub\SudokuSolver\FindowsWormsApp\FindowsWormsApp\obj\Release\net8.0-windows\SudokuSolverForms.csproj.GenerateResource.cache
 C:\Users\jakob\Documents\GitHub\SudokuSolver\FindowsWormsApp\FindowsWormsApp\obj\Release\net8.0-windows\SudokuSolverForms.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\jakob\Documents\GitHub\SudokuSolver\FindowsWormsApp\FindowsWormsApp\obj\Release\net8.0-windows\SudokuSolverForms.AssemblyInfoInputs.cache
@@ -16,3 +14,5 @@ C:\Users\jakob\Documents\GitHub\SudokuSolver\FindowsWormsApp\FindowsWormsApp\obj
 C:\Users\jakob\Documents\GitHub\SudokuSolver\FindowsWormsApp\FindowsWormsApp\obj\Release\net8.0-windows\SudokuSolverForms.pdb
 C:\Users\jakob\Documents\GitHub\SudokuSolver\FindowsWormsApp\FindowsWormsApp\obj\Release\net8.0-windows\SudokuSolverForms.genruntimeconfig.cache
 C:\Users\jakob\Documents\GitHub\SudokuSolver\FindowsWormsApp\FindowsWormsApp\obj\Release\net8.0-windows\ref\SudokuSolverForms.dll
+C:\Users\jakob\Documents\GitHub\SudokuSolver\FindowsWormsApp\FindowsWormsApp\obj\Release\net8.0-windows\SudokuSolverForms.Form1.resources
+C:\Users\jakob\Documents\GitHub\SudokuSolver\FindowsWormsApp\FindowsWormsApp\obj\Release\net8.0-windows\SudokuSolverForms.Forms.SudokuGUI.resources

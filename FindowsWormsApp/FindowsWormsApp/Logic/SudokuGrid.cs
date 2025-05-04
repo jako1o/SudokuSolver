@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using static System.Runtime.InteropServices.JavaScript.JSType;
-using FindowsWormsApp.Enums;
+using SudokuSolverForms.Enums;
 
-namespace FindowsWormsApp.Logic
+namespace SudokuSolverForms.Logic
 {
     public  class SudokuGrid
     {
