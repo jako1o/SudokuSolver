@@ -63,5 +63,5 @@ Dieses Projekt steht unter der [MIT-Lizenz](LICENSE).
 
 ## ✍️ Autor
 
-> Erstellt von jako1o und wasdiesename  
-> Fragen oder Ideen? Gerne via GitHub-Issues.
+Erstellt von jako1o und wasdiesename  
+Fragen oder Ideen? Gerne via GitHub-Issues.
