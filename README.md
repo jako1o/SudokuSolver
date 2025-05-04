@@ -43,21 +43,16 @@ SudokuSolverForms
 3. zu lösendes Sudoku eingeben - Lösen klicken - fertig!
 4. optional kann über den Button "Besipiel laden" ein solches geladen werden, um die Funktion zu testen
 
----
-
-## 💡 Beispiel-Screenshots 
-
-
 
 ---
 
 ## 📃 Lizenz
 
-*(Falls du eine Lizenz hinzufügen willst – z. B. MIT)*
+Dieses Projekt steht unter der [MIT-Lizenz](LICENSE).
 
 ---
 
 ## ✍️ Autor
 
-> Erstellt von [Dein Name oder Nickname]  
+> Erstellt von jako1o und wasdiesename  
 > Fragen oder Ideen? Gerne via GitHub-Issues.
