@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\jakob\\Documents\\GitHub\\SudokuSolver\\SudokuSolverForms\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{199F8261-CEDB-4BB9-89B7-978F08BC26C0}|SudokuSolverForms\\SudokuSolverForms.csproj|c:\\users\\jakob\\documents\\github\\sudokusolver\\sudokusolverforms\\sudokusolverforms\\helpers\\gridhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{199F8261-CEDB-4BB9-89B7-978F08BC26C0}|SudokuSolverForms\\SudokuSolverForms.csproj|solutionrelative:sudokusolverforms\\helpers\\gridhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{199F8261-CEDB-4BB9-89B7-978F08BC26C0}|SudokuSolverForms\\SudokuSolverForms.csproj|c:\\users\\jakob\\documents\\github\\sudokusolver\\sudokusolverforms\\sudokusolverforms\\logic\\sudokugrid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{199F8261-CEDB-4BB9-89B7-978F08BC26C0}|SudokuSolverForms\\SudokuSolverForms.csproj|solutionrelative:sudokusolverforms\\logic\\sudokugrid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{199F8261-CEDB-4BB9-89B7-978F08BC26C0}|SudokuSolverForms\\SudokuSolverForms.csproj|c:\\users\\jakob\\documents\\github\\sudokusolver\\sudokusolverforms\\sudokusolverforms\\enums\\errorcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{199F8261-CEDB-4BB9-89B7-978F08BC26C0}|SudokuSolverForms\\SudokuSolverForms.csproj|solutionrelative:sudokusolverforms\\enums\\errorcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{199F8261-CEDB-4BB9-89B7-978F08BC26C0}|SudokuSolverForms\\SudokuSolverForms.csproj|c:\\users\\jakob\\documents\\github\\sudokusolver\\sudokusolverforms\\sudokusolverforms\\logic\\sudoku solver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{199F8261-CEDB-4BB9-89B7-978F08BC26C0}|SudokuSolverForms\\SudokuSolverForms.csproj|solutionrelative:sudokusolverforms\\logic\\sudoku solver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -18,24 +30,67 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SudokuGrid.cs",
+              "DocumentMoniker": "C:\\Users\\jakob\\Documents\\GitHub\\SudokuSolver\\SudokuSolverForms\\SudokuSolverForms\\Logic\\SudokuGrid.cs",
+              "RelativeDocumentMoniker": "SudokuSolverForms\\Logic\\SudokuGrid.cs",
+              "ToolTip": "C:\\Users\\jakob\\Documents\\GitHub\\SudokuSolver\\SudokuSolverForms\\SudokuSolverForms\\Logic\\SudokuGrid.cs",
+              "RelativeToolTip": "SudokuSolverForms\\Logic\\SudokuGrid.cs",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAmwIoAAAClAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T15:15:11.652Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "GridHelper.cs",
+              "DocumentMoniker": "C:\\Users\\jakob\\Documents\\GitHub\\SudokuSolver\\SudokuSolverForms\\SudokuSolverForms\\Helpers\\GridHelper.cs",
+              "RelativeDocumentMoniker": "SudokuSolverForms\\Helpers\\GridHelper.cs",
+              "ToolTip": "C:\\Users\\jakob\\Documents\\GitHub\\SudokuSolver\\SudokuSolverForms\\SudokuSolverForms\\Helpers\\GridHelper.cs",
+              "RelativeToolTip": "SudokuSolverForms\\Helpers\\GridHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE0AAABqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T15:14:46.618Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ErrorCode.cs",
+              "DocumentMoniker": "C:\\Users\\jakob\\Documents\\GitHub\\SudokuSolver\\SudokuSolverForms\\SudokuSolverForms\\Enums\\ErrorCode.cs",
+              "RelativeDocumentMoniker": "SudokuSolverForms\\Enums\\ErrorCode.cs",
+              "ToolTip": "C:\\Users\\jakob\\Documents\\GitHub\\SudokuSolver\\SudokuSolverForms\\SudokuSolverForms\\Enums\\ErrorCode.cs",
+              "RelativeToolTip": "SudokuSolverForms\\Enums\\ErrorCode.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T15:14:41.25Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Sudoku Solver.cs",
               "DocumentMoniker": "C:\\Users\\jakob\\Documents\\GitHub\\SudokuSolver\\SudokuSolverForms\\SudokuSolverForms\\Logic\\Sudoku Solver.cs",
               "RelativeDocumentMoniker": "SudokuSolverForms\\Logic\\Sudoku Solver.cs",
               "ToolTip": "C:\\Users\\jakob\\Documents\\GitHub\\SudokuSolver\\SudokuSolverForms\\SudokuSolverForms\\Logic\\Sudoku Solver.cs",
               "RelativeToolTip": "SudokuSolverForms\\Logic\\Sudoku Solver.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-04T19:54:39.745Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "SudokuTestData.cs",
               "DocumentMoniker": "C:\\Users\\jakob\\Documents\\GitHub\\SudokuSolver\\SudokuSolverForms\\SudokuSolverForms\\Helpers\\SudokuTestData.cs",
               "RelativeDocumentMoniker": "SudokuSolverForms\\Helpers\\SudokuTestData.cs",
@@ -43,12 +98,7 @@
               "RelativeToolTip": "SudokuSolverForms\\Helpers\\SudokuTestData.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T19:54:36.55Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "WhenOpened": "2025-05-04T19:54:36.55Z"
             }
           ]
         }

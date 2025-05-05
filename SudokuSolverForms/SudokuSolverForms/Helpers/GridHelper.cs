@@ -49,24 +49,24 @@ namespace SudokuSolverForms.Helpers
                     
                 }
                 {
-                    MessageBox.Show("Keine Lösung gefunden");
+                    MessageBox.Show($"Keine Lösung gefunden", "Fehler", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return null;
                 }
 
             }
             else if (result == ErrorCode.Size)
             {
-                MessageBox.Show("Die Eingabe entspricht nicht der geforderten Größe(9x9)");
+                MessageBox.Show($"Die Eingabe entspricht nicht der geforderten Größe(9x9)", "Fehler", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return null;
             }
             else if (result == ErrorCode.Empty)
             {
-                MessageBox.Show("Die Eingegebene Raster enthält keine Werte");
+                MessageBox.Show("Die Eingegebene Raster enthält keine Werte", "Fehler", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return null;
             }
             else if (result == ErrorCode.NumbersInvalid)
             {
-                MessageBox.Show("Die Eingabe enthält unzulässige Zahlen (nur 1-9)");
+                MessageBox.Show("Die Eingabe enthält unzulässige Zahlen (nur 1-9)", "Fehler", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return null;
             }
             else if (result == ErrorCode.InputInvalid)
@@ -75,7 +75,7 @@ namespace SudokuSolverForms.Helpers
             }
             else
             {
-                MessageBox.Show("Unbekannter Fehler");
+                MessageBox.Show("Unbekannter Fehler", "Fehler", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return null;
             }
         }
